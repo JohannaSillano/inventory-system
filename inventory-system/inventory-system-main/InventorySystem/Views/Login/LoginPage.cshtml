@@ -1,50 +1,45 @@
 @{
-    Layout = null; // Disable the layout for this view
-    ViewData["Title"] = "Login";
+    Layout = null;
 }
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewData["Title"]</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <!-- Include CSS files -->
-    <link rel="stylesheet" href="~/css/loginpage.css" asp-append-version="true" />
+    <title>Login</title>
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="~/css/Loginpage.css" />
 </head>
-
 <body>
-    <div class="login-container">
-        <div class="login-box">
-            <h2>Login</h2>
+    <div class="container">
+        <!-- Left: Background image -->
+        <div class="image-section"></div>
 
-            @if (ViewBag.ErrorMessage != null)
-            {
-                <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
-            }
+        <!-- Right: Login form -->
+        <div class="form-section">
+            <!-- Profile image -->
+            <div class="profile-image"></div>
 
+            <!-- Login form -->
             <form asp-action="LoginPage" method="post">
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" required />
+                <h2>Login</h2>
+
+                @if (ViewBag.ErrorMessage != null)
+                {
+                    <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+                }
+                
+                <input type="email" class="form-control" name="Email" placeholder="Enter your email" required />
+                <input type="password" class="form-control" name="Password" placeholder="Enter your password" required />
+                <button type="submit" class="btn">Login</button>
+
+                <!-- Centered Forgot Password link -->
+                <div class="forgot-password">
+                    <a href="/Account/ForgotPassword">Forgot password?</a>
                 </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" required />
-                </div>
-                <button type="submit" class="btn btn-primary">Login</button>
             </form>
         </div>
     </div>
-
-    <!-- Optional JavaScript -->
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/js/loginpage.js"></script>
 </body>
-
 </html>

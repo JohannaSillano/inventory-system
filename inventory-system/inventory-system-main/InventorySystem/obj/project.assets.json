@@ -3469,19 +3469,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JOHANNA MAE\\.nuget\\packages\\": {}
+    "C:\\Users\\emaca\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JOHANNA MAE\\Downloads\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\InventorySystem.csproj",
+      "projectUniqueName": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\InventorySystem.csproj",
       "projectName": "InventorySystem",
-      "projectPath": "C:\\Users\\JOHANNA MAE\\Downloads\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\InventorySystem.csproj",
-      "packagesPath": "C:\\Users\\JOHANNA MAE\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JOHANNA MAE\\Downloads\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\obj\\",
+      "projectPath": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\InventorySystem.csproj",
+      "packagesPath": "C:\\Users\\emaca\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\JOHANNA MAE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\emaca\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3546,24 +3546,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.11, 8.0.11]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.11, 8.0.11]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.11, 8.0.11]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.11, 8.0.11]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"

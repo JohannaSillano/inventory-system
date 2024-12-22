@@ -26,7 +26,7 @@
         }
 
         .custom-icon {
-            color:#ffb703;
+            color:#ffffff;
         }
 
         .navbar-nav li {
@@ -35,7 +35,7 @@
 
         .navbar-nav li:hover {
             text-decoration: none;
-            color:#ffb703;
+            color:#477cd0;
             transform: translateX(5px);
         }
     </style>
@@ -46,8 +46,7 @@
         <header>
             <nav class="navbar">
                 <div class="navbar-brand">
-                    <img style="width:80px; height: 70px;" src="~/images/fast-delivery.png">
-                    <a href="#" style="font-weight: bold;">StockXZ</a>
+                    <img style="width:120px; height: 70px; margin-bottom:10px;" src="~/images/ArcticLogo.png">
                 </div>
                 <ul class="navbar-nav">
                     <li>
@@ -55,12 +54,16 @@
                         <a asp-controller="Dashboard" asp-action="Index">Dashboard</a>
                     </li>
                     <li>
-                        <i class="fa-solid fa-screwdriver-wrench custom-icon"></i>
-                        <a asp-controller="Products" asp-action="ProductsPage">Manage Products</a>
+                        <img src="~/images/Products.png" alt="Products Icon" style="width:30px; height:25px; margin-right:5px;">
+                        <a asp-controller="Products" asp-action="ProductsPage">Products</a>
                     </li>
                     <li>
-                        <i class="fa-solid fa-user custom-icon"></i>
-                        <a style="margin-left:1px;" asp-controller="Profile" asp-action="ProfilePage">Profile</a>
+                        <img src="~/images/Sales.png" alt="Products Icon" style="width:30px; height:25px; margin-right:5px;">
+                        <a asp-controller="Products" asp-action="ProductsPage">Sales</a>
+                    </li>
+                    <li>
+                        <img src="~/images/Users.png" alt="Products Icon" style="width:30px; height:25px; margin-right:5px;">
+                        <a style="margin-left:1px;" asp-controller="Profile" asp-action="ProfilePage">User</a>
                     </li>
                     <div>
                         <!-- User session check -->

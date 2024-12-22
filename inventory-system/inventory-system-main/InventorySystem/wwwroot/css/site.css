@@ -28,18 +28,18 @@ body {
 
 .custom-icon {
   font-size: 24px;
-  color: #4caf50;
+  color: #ffffff;
   margin-right: 10px;
   transition: color 0.3s ease; /* Optional: for hover effect */
 }
 
 .custom-icon:hover {
-  color: #ff5722; /* Change color on hover */
+  color: #2b60b4; /* Change color on hover */
 }
 
 
 header {
-  background-color: #450920;
+  background-color: #2b60b4;
   color: #ffffff;
   padding: 0.5em 0;
   width: 280px;
@@ -122,8 +122,8 @@ main {
 }
 
 footer {
-  background-color: #da627d;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 1em 0;
   flex-grow: 2;

@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    background-color: #021526;
+    background-color: #ffffff;
     color: #faf0ca;
 }
 
@@ -37,7 +37,7 @@ h1 {
 
 /* Adjusted Chart Container Size */
 .chart-container {
-    background: #2b2d42;
+    background: #2b60b4;
     padding: 20px 0;
     color: #faf0ca;
     border-radius: 4px;
@@ -56,7 +56,7 @@ h1 {
 
 
 .card {
-    background: #2b2d42;
+    background: #2b60b4;
     color: #faf0ca;
     border-radius: 4px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -97,14 +97,14 @@ h1 {
 .card:hover {
     flex-grow: 6;
     transform: scale(1.9); /* Smooth scale-up on hover */
-    background-color: #fca311; /* Change background color */
+    background-color: #477cd0; /* Change background color */
     opacity: 0.9; /* Fade effect */
 }
 
 /* Hover Effects - Scale Effect */
 .chart-container:hover {
     transform: scale(1.9); /* Smooth scale-up on hover */
-    background-color: #fca311; /* Change background color */
+    background-color: #477cd0; /* Change background color */
     opacity: 0.9; /* Fade effect */
     color:  #2b2d42;
 }
@@ -128,7 +128,7 @@ h1 {
 
 /* Card Styling */
 .card {
-    background: #14213d;
+    background: #2b60b4;
     color: #faf0ca;
 }
 
