@@ -1,0 +1,436 @@
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\appsettings.json
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\InventorySystem.staticwebassets.runtime.json
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\InventorySystem.exe
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\InventorySystem.deps.json
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\InventorySystem.runtimeconfig.json
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\InventorySystem.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\InventorySystem.pdb
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\InventorySystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\InventorySystem.AssemblyInfoInputs.cache
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\InventorySystem.AssemblyInfo.cs
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\InventorySystem.csproj.CoreCompileInputs.cache
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\InventorySystem.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\InventorySystem.RazorAssemblyInfo.cache
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\InventorySystem.RazorAssemblyInfo.cs
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.InventorySystem.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.build.InventorySystem.props
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.InventorySystem.props
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.InventorySystem.props
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\scopedcss\bundle\InventorySystem.styles.css
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\InventorySystem.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\refint\InventorySystem.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\InventorySystem.pdb
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\InventorySystem.genruntimeconfig.cache
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\ref\InventorySystem.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\InventorySystem.csproj.AssemblyReference.cache
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\Inventor.4967888A.Up2Date
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\obj\Debug\net8.0\InventorySystem.sourcelink.json
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\MVCPractice_Inventory\InventorySystem\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\appsettings.json
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\InventorySystem.staticwebassets.runtime.json
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\InventorySystem.exe
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\InventorySystem.deps.json
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\InventorySystem.runtimeconfig.json
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\InventorySystem.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\InventorySystem.pdb
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\InventorySystem.csproj.AssemblyReference.cache
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\InventorySystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\InventorySystem.AssemblyInfoInputs.cache
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\InventorySystem.AssemblyInfo.cs
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\InventorySystem.csproj.CoreCompileInputs.cache
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\InventorySystem.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\InventorySystem.RazorAssemblyInfo.cache
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\InventorySystem.RazorAssemblyInfo.cs
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\InventorySystem.sourcelink.json
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.InventorySystem.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.build.InventorySystem.props
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.InventorySystem.props
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.InventorySystem.props
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\scopedcss\bundle\InventorySystem.styles.css
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\Inventor.4967888A.Up2Date
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\InventorySystem.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\refint\InventorySystem.dll
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\InventorySystem.pdb
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\InventorySystem.genruntimeconfig.cache
+C:\Users\Angel\OneDrive\Documents\ashley\WebDevPrac\InventorySystem\InventorySystem\obj\Debug\net8.0\ref\InventorySystem.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\appsettings.json
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\InventorySystem.staticwebassets.runtime.json
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\InventorySystem.staticwebassets.endpoints.json
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\InventorySystem.exe
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\InventorySystem.deps.json
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\InventorySystem.runtimeconfig.json
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\InventorySystem.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\InventorySystem.pdb
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.csproj.AssemblyReference.cache
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.AssemblyInfoInputs.cache
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.AssemblyInfo.cs
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.csproj.CoreCompileInputs.cache
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.RazorAssemblyInfo.cache
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.RazorAssemblyInfo.cs
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\scopedcss\bundle\InventorySystem.styles.css
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.InventorySystem.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.InventorySystem.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.build.InventorySystem.props
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.InventorySystem.props
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.InventorySystem.props
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\Inventor.4967888A.Up2Date
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\refint\InventorySystem.dll
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.pdb
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.genruntimeconfig.cache
+C:\Users\JOHANNA MAE\Downloads\Copy of inventory-system-main\inventory-system-main\InventorySystem\obj\Debug\net8.0\ref\InventorySystem.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\appsettings.json
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\InventorySystem.staticwebassets.endpoints.json
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\InventorySystem.staticwebassets.runtime.json
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\InventorySystem.exe
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\InventorySystem.deps.json
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\InventorySystem.runtimeconfig.json
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\InventorySystem.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\InventorySystem.pdb
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.csproj.AssemblyReference.cache
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.AssemblyInfoInputs.cache
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.AssemblyInfo.cs
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.csproj.CoreCompileInputs.cache
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.RazorAssemblyInfo.cache
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.RazorAssemblyInfo.cs
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\scopedcss\bundle\InventorySystem.styles.css
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.InventorySystem.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.InventorySystem.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.build.InventorySystem.props
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.InventorySystem.props
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.InventorySystem.props
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\Inventor.4967888A.Up2Date
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\refint\InventorySystem.dll
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.pdb
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.genruntimeconfig.cache
+C:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\ref\InventorySystem.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\appsettings.Development.json
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\appsettings.json
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\InventorySystem.staticwebassets.runtime.json
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\InventorySystem.staticwebassets.endpoints.json
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\InventorySystem.exe
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\InventorySystem.deps.json
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\InventorySystem.runtimeconfig.json
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\InventorySystem.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\InventorySystem.pdb
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Azure.Core.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Azure.Identity.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\Newtonsoft.Json.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.ClientModel.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Drawing.Common.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Formats.Asn1.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.IO.Pipelines.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Memory.Data.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Runtime.Caching.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Security.Permissions.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Text.Json.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\System.Windows.Extensions.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.csproj.AssemblyReference.cache
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.AssemblyInfoInputs.cache
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.AssemblyInfo.cs
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.csproj.CoreCompileInputs.cache
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.MvcApplicationPartsAssemblyInfo.cache
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.RazorAssemblyInfo.cache
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.RazorAssemblyInfo.cs
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\scopedcss\bundle\InventorySystem.styles.css
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets.build.json
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets.development.json
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.InventorySystem.Microsoft.AspNetCore.StaticWebAssets.props
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.InventorySystem.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.build.InventorySystem.props
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.InventorySystem.props
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.InventorySystem.props
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\staticwebassets.pack.json
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\Inventor.4967888A.Up2Date
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\refint\InventorySystem.dll
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.pdb
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\InventorySystem.genruntimeconfig.cache
+c:\Users\JOHANNA MAE\Downloads\inventory-system\inventory-system\inventory-system-main\InventorySystem\obj\Debug\net8.0\ref\InventorySystem.dll
