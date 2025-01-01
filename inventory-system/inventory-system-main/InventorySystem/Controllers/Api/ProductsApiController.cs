@@ -28,7 +28,7 @@ namespace InventorySystem.Controllers.Api
         [HttpPost("updateproductstock")]
         public IActionResult UpdateProductStock([FromBody] StockUpdateRequest request)
         {
-            var product = _context.Products.FirstOrDefault(p => p.Id == request.Id);
+            var product = _context.Products.FirstOrDefault(p => p.Id == request.ProductId);
             if (product == null)
             {
                 return NotFound(new { Error = "Product not found." });
