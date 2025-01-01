@@ -24,8 +24,8 @@ namespace InventorySystem.Controllers.Api
                                     .ToList();
             return Ok(products);
         }
-
-        [HttpPost("updateproductstock")]
+        // Endpoint to get a single product by ID
+        [HttpPost]
         public IActionResult UpdateProductStock([FromBody] StockUpdateRequest request)
         {
             var product = _context.Products.FirstOrDefault(p => p.Id == request.ProductId);
