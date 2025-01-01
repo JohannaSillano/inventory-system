@@ -1,11 +1,11 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using InventorySystem.Models;
+using System.Linq;
 
 namespace InventorySystem.Controllers.Api 
 {
     [Route("api/[controller]/[action]")]
-    [ApiController] // Specifies that this is an API controller
+    [ApiController]
     public class ProductsApiController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
@@ -15,16 +15,30 @@ namespace InventorySystem.Controllers.Api
             _context = context;
         }
 
-        //[HttpGet("GetAllProducts")] this is unnecessary anymore since in [Route("api/[controller]/[action]")], the action is already
-        // included in the routing. Meaning, the name of the action will be put in the action syntax above. But you can remove that
-        // just like this: [Route("api/[controller]")]. But since there's no action, you'll need to include this: [HttpGet("GetAllProducts")]
-        // above this action name below:
+        // Endpoint to get all products that are not deleted
+        [HttpGet]
         public IActionResult GetAllProducts()
         {
             var products = _context.Products
-                                    .Where(p => !p.IsDeleted)
+                                    .Where(p => !p.IsDeleted)  // Exclude deleted products
                                     .ToList();
             return Ok(products);
+        }
+
+        [HttpPost("updateproductstock")]
+        public IActionResult UpdateProductStock([FromBody] StockUpdateRequest request)
+        {
+            var product = _context.Products.FirstOrDefault(p => p.Id == request.Id);
+            if (product == null)
+            {
+                return NotFound(new { Error = "Product not found." });
+            }
+
+            product.StockQuantity += request.StockQuantity; // Deduct or add stock
+
+            _context.SaveChanges();
+
+            return Ok(new { Message = "Stock updated successfully!" });
         }
     }
 }
