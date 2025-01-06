@@ -19,5 +19,9 @@ namespace InventorySystem.Models
         [Required]
         [StringLength(255)]
         public required string Password { get; set; } // Store hashed passwords
+
+        [Required]
+        [StringLength(30)]
+        public required string Role { get; set; }
     }
 }
