@@ -16,7 +16,7 @@ CREATE TABLE Users (
     Password NVARCHAR(255) NOT NULL    -- Password column with a maximum length of 255 characters (for hashed passwords)
 );
 
-CREATE TABLE UserProfile (
+CREATE TABLE UserProfiles (
     Id INT PRIMARY KEY IDENTITY(1,1), -- Auto-incrementing primary key
     FullName NVARCHAR(255) NOT NULL, -- Required
     Email NVARCHAR(255) NOT NULL, -- Required
