@@ -7,7 +7,7 @@ CREATE TABLE Products (
     Category NVARCHAR(255) NOT NULL,
     IsDeleted BIT NOT NULL,
     DateAdded DATETIME NOT NULL DEFAULT GETDATE(), -- Added column
-    DateExpired DATETIME NOT NULL DEFAULT GETDATE()
+    DateExpired DATETIME NOT NULL
 );
 
 CREATE TABLE Users (
