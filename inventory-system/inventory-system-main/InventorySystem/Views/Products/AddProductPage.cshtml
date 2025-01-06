@@ -55,6 +55,12 @@
                         <input type="text" id="DateAdded" class="form-control form-control-lg" name="DateAdded" placeholder="Select date" required>
                     </div>
 
+                    <!-- Date Expired -->
+                    <div class="form-group mb-4">
+                        <label for="DateExpired" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Date Expired</label>
+                        <input type="text" id="DateExpired" class="form-control form-control-lg" name="DateExpired" placeholder="Select date" required>
+                    </div>
+
                     <!-- Submit Button -->
                     <div class="text-center">
                         <button type="submit" class="btn btn-success btn-lg px-5" style="border-radius: 25px; font-size: 1.1rem;">
@@ -77,6 +83,12 @@
     flatpickr("#DateAdded", {
         dateFormat: "Y-m-d",
         defaultDate: new Date(),
+        enableTime: false
+    });
+
+    flatpickr("#DateExpired", {
+        dateFormat: "Y-m-d",
+        //defaultDate: new Date(),
         enableTime: false
     });
 
