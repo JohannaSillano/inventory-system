@@ -1,11 +1,11 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using InventorySystem.Models;
+using System.Linq;
 
-namespace InventorySystem.Controllers.Api 
+namespace InventorySystem.Controllers.Api
 {
     [Route("api/[controller]/[action]")]
-    [ApiController] // Specifies that this is an API controller
+    [ApiController]
     public class ProductsApiController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
@@ -15,16 +15,34 @@ namespace InventorySystem.Controllers.Api
             _context = context;
         }
 
-        //[HttpGet("GetAllProducts")] this is unnecessary anymore since in [Route("api/[controller]/[action]")], the action is already
-        // included in the routing. Meaning, the name of the action will be put in the action syntax above. But you can remove that
-        // just like this: [Route("api/[controller]")]. But since there's no action, you'll need to include this: [HttpGet("GetAllProducts")]
-        // above this action name below:
+        // Get all products (existing)
         public IActionResult GetAllProducts()
         {
             var products = _context.Products
                                     .Where(p => !p.IsDeleted)
                                     .ToList();
             return Ok(products);
+        }
+
+        // Search products by name
+        [HttpGet]
+        public IActionResult SearchProducts(string query)
+        {
+            // If the search query is empty or null, return all products
+            if (string.IsNullOrWhiteSpace(query))
+            {
+                var allProducts = _context.Products
+                                          .Where(p => !p.IsDeleted)
+                                          .ToList();
+                return Ok(allProducts);
+            } else {
+                // Otherwise, perform a case-insensitive search for the products
+                var matchingProducts = _context.Products
+                                            .Where(p => !p.IsDeleted && p.Name.ToLower().Contains(query.ToLower()))
+                                            .ToList();
+
+                return Ok(matchingProducts);
+            }
         }
     }
 }
