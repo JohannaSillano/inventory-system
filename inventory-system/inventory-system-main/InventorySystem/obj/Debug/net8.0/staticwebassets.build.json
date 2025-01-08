@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
+  "Hash": "xgsBcRl9WwZ4If2ahpTvaAGIrpdrDhd2NGOQPR/tmrI=",
+=======
   "Hash": "aoTQB/HOLra+CdVoucukE5Y7yDMWi+m2PHmE5Px9Tlg=",
+>>>>>>> origin/main
   "Source": "InventorySystem",
   "BasePath": "_content/InventorySystem",
   "Mode": "Default",
@@ -1656,7 +1660,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Wed, 01 Jan 2025 12:31:07 GMT"
+=======
           "Value": "Mon, 23 Dec 2024 07:05:24 GMT"
+>>>>>>> origin/main
         },
         {
           "Name": "Cache-Control",
@@ -1693,7 +1701,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Wed, 01 Jan 2025 12:31:07 GMT"
+=======
           "Value": "Mon, 23 Dec 2024 07:05:24 GMT"
+>>>>>>> origin/main
         },
         {
           "Name": "Cache-Control",
@@ -1738,7 +1750,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Wed, 01 Jan 2025 12:31:07 GMT"
+=======
           "Value": "Mon, 23 Dec 2024 07:05:24 GMT"
+>>>>>>> origin/main
         },
         {
           "Name": "Cache-Control",
@@ -1783,7 +1799,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Wed, 01 Jan 2025 12:31:07 GMT"
+=======
           "Value": "Mon, 23 Dec 2024 07:05:24 GMT"
+>>>>>>> origin/main
         },
         {
           "Name": "Cache-Control",
@@ -1820,7 +1840,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Wed, 01 Jan 2025 12:31:07 GMT"
+=======
           "Value": "Mon, 23 Dec 2024 07:05:24 GMT"
+>>>>>>> origin/main
         },
         {
           "Name": "Cache-Control",
@@ -1857,7 +1881,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Wed, 01 Jan 2025 12:31:07 GMT"
+=======
           "Value": "Mon, 23 Dec 2024 07:05:24 GMT"
+>>>>>>> origin/main
         },
         {
           "Name": "Cache-Control",
@@ -1984,7 +2012,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Wed, 01 Jan 2025 12:31:07 GMT"
+=======
           "Value": "Mon, 23 Dec 2024 07:05:24 GMT"
+>>>>>>> origin/main
         },
         {
           "Name": "Cache-Control",
@@ -2029,7 +2061,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Wed, 01 Jan 2025 12:31:07 GMT"
+=======
           "Value": "Mon, 23 Dec 2024 07:05:24 GMT"
+>>>>>>> origin/main
         },
         {
           "Name": "Cache-Control",
@@ -2148,7 +2184,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Wed, 01 Jan 2025 12:31:07 GMT"
+=======
           "Value": "Mon, 23 Dec 2024 07:05:24 GMT"
+>>>>>>> origin/main
         },
         {
           "Name": "Cache-Control",
@@ -2193,7 +2233,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Wed, 01 Jan 2025 12:31:07 GMT"
+=======
           "Value": "Mon, 23 Dec 2024 07:05:24 GMT"
+>>>>>>> origin/main
         },
         {
           "Name": "Cache-Control",
@@ -2476,7 +2520,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Wed, 01 Jan 2025 12:31:07 GMT"
+=======
           "Value": "Mon, 23 Dec 2024 07:05:24 GMT"
+>>>>>>> origin/main
         },
         {
           "Name": "Cache-Control",
@@ -2521,7 +2569,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Wed, 01 Jan 2025 12:31:07 GMT"
+=======
           "Value": "Mon, 23 Dec 2024 07:05:24 GMT"
+>>>>>>> origin/main
         },
         {
           "Name": "Cache-Control",
@@ -2558,7 +2610,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Wed, 01 Jan 2025 12:31:07 GMT"
+=======
           "Value": "Mon, 23 Dec 2024 07:05:24 GMT"
+>>>>>>> origin/main
         },
         {
           "Name": "Cache-Control",
@@ -2595,7 +2651,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Wed, 01 Jan 2025 12:31:07 GMT"
+=======
           "Value": "Mon, 23 Dec 2024 07:05:24 GMT"
+>>>>>>> origin/main
         },
         {
           "Name": "Cache-Control",
@@ -2640,7 +2700,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Wed, 01 Jan 2025 12:31:07 GMT"
+=======
           "Value": "Mon, 23 Dec 2024 07:05:24 GMT"
+>>>>>>> origin/main
         },
         {
           "Name": "Cache-Control",
@@ -2677,7 +2741,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Wed, 01 Jan 2025 12:31:07 GMT"
+=======
           "Value": "Mon, 23 Dec 2024 07:05:24 GMT"
+>>>>>>> origin/main
         },
         {
           "Name": "Cache-Control",
