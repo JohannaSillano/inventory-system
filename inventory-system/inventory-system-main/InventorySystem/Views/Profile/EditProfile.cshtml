@@ -1,4 +1,4 @@
-@model InventorySystem.Models.UserProfile
+@model InventorySystem.Models.EmployeeProfile
 
 @{
     ViewData["Title"] = "Edit Profile";
@@ -49,6 +49,12 @@
                     <div class="form-group mb-4">
                         <label for="Address" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Address</label>
                         <input type="text" class="form-control form-control-lg" id="Address" name="Address" value="@Model.Address">
+                    </div>
+
+                    <!-- Role (New Field) -->
+                    <div class="form-group mb-4">
+                        <label for="Role" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Role</label>
+                        <input type="text" class="form-control form-control-lg" id="Role" name="Role" value="@Model.Role" required>
                     </div>
 
                     <!-- Submit Button -->
