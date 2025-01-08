@@ -15,12 +15,8 @@ namespace InventorySystem.Controllers.Api
             _context = context;
         }
 
-<<<<<<< HEAD
-        // Endpoint to get all products that are not deleted
-        [HttpGet]
-=======
         // Get all products (existing)
->>>>>>> origin/main
+        [HttpGet]
         public IActionResult GetAllProducts()
         {
             var products = _context.Products
@@ -28,8 +24,8 @@ namespace InventorySystem.Controllers.Api
                                     .ToList();
             return Ok(products);
         }
-<<<<<<< HEAD
-        // Endpoint to get a single product by ID
+
+        // Endpoint to update product stock
         [HttpPost]
         public IActionResult UpdateProductStock([FromBody] StockUpdateRequest request)
         {
@@ -40,11 +36,10 @@ namespace InventorySystem.Controllers.Api
             }
 
             product.StockQuantity += request.StockQuantity; // Deduct or add stock
-
             _context.SaveChanges();
 
             return Ok(new { Message = "Stock updated successfully!" });
-=======
+        }
 
         // Search products by name
         [HttpGet]
@@ -57,15 +52,16 @@ namespace InventorySystem.Controllers.Api
                                           .Where(p => !p.IsDeleted)
                                           .ToList();
                 return Ok(allProducts);
-            } else {
+            }
+            else
+            {
                 // Otherwise, perform a case-insensitive search for the products
                 var matchingProducts = _context.Products
-                                            .Where(p => !p.IsDeleted && p.Name.ToLower().Contains(query.ToLower()))
-                                            .ToList();
+                                                .Where(p => !p.IsDeleted && p.Name.ToLower().Contains(query.ToLower()))
+                                                .ToList();
 
                 return Ok(matchingProducts);
             }
->>>>>>> origin/main
         }
     }
 }
