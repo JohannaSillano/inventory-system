@@ -24,7 +24,9 @@ namespace InventorySystem.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult LoginPage(string email, string password)
         {
+            // Retrieve the user based on email and password
             var user = _context.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
+
             if (user != null)
             {
                 HttpContext.Session.SetString("UserId", user.Id.ToString());

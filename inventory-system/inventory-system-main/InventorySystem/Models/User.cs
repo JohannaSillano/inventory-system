@@ -10,5 +10,9 @@ namespace InventorySystem.Models
         public required string LastName { get; set; } // Last name column
         public required string Email { get; set; } // Email address
         public required string Password { get; set; } // Store hashed passwords
+
+        [Required]
+        [StringLength(30)]
+        public required string Role { get; set; }
     }
 }

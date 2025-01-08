@@ -15,14 +15,36 @@ namespace InventorySystem.Controllers.Api
             _context = context;
         }
 
+<<<<<<< HEAD
+        // Endpoint to get all products that are not deleted
+        [HttpGet]
+=======
         // Get all products (existing)
+>>>>>>> origin/main
         public IActionResult GetAllProducts()
         {
             var products = _context.Products
-                                    .Where(p => !p.IsDeleted)
+                                    .Where(p => !p.IsDeleted)  // Exclude deleted products
                                     .ToList();
             return Ok(products);
         }
+<<<<<<< HEAD
+        // Endpoint to get a single product by ID
+        [HttpPost]
+        public IActionResult UpdateProductStock([FromBody] StockUpdateRequest request)
+        {
+            var product = _context.Products.FirstOrDefault(p => p.Id == request.ProductId);
+            if (product == null)
+            {
+                return NotFound(new { Error = "Product not found." });
+            }
+
+            product.StockQuantity += request.StockQuantity; // Deduct or add stock
+
+            _context.SaveChanges();
+
+            return Ok(new { Message = "Stock updated successfully!" });
+=======
 
         // Search products by name
         [HttpGet]
@@ -43,6 +65,7 @@ namespace InventorySystem.Controllers.Api
 
                 return Ok(matchingProducts);
             }
+>>>>>>> origin/main
         }
     }
 }

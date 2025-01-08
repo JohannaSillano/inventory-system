@@ -28,7 +28,7 @@ builder.Services.AddControllers();
 // Ensure CORS (Cross-Origin Resource Sharing) is enabled to allow requests from the Ecommerce System.
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowEcommerceSystem", policy =>
+    options.AddPolicy("AllowAll", policy =>
     {
         policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
     });
@@ -57,12 +57,15 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseCors("AllowEcommerceSystem");
+app.UseCors("AllowAll");
 
 // Add session middleware to the request pipeline
 app.UseSession(); // This should come before UseAuthorization
 
 app.UseAuthorization();
+
+// Map API routes (make sure this line is added to enable the API controllers)
+app.MapControllers(); // This will ensure that API routes like updateproductstock are recognized
 
 app.MapControllerRoute(
     name: "default",
