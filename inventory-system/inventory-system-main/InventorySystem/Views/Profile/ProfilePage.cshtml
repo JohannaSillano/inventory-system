@@ -1,7 +1,7 @@
-@model InventorySystem.Models.UserProfile
+@model InventorySystem.Models.EmployeeProfile
 
 @{
-    ViewData["Title"] = "Users";
+    ViewData["Title"] = "Employees";
 }
 
 <!DOCTYPE html>
@@ -144,7 +144,7 @@
         <a asp-controller="Dashboard" asp-action="Index" class="text-decoration-none" title="Go Back">
             <i class="fa-solid fa-arrow-left fs-3 text-dark"></i>
         </a>
-        <h1 class="fw-bold">Users</h1>
+        <h1 class="fw-bold">Employees</h1>
     </div>
 
     <!-- Profile Details in a Card -->
@@ -167,6 +167,10 @@
                     <div class="profile-info">
                         <p>Address: </p>
                         <p>@Model.Address</p>
+                    </div>
+                    <div class="profile-info">
+                        <p>Role: </p>
+                        <p>@Model.Role</p> <!-- Displaying Role -->
                     </div>
                 </div>
 
