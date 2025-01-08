@@ -29,24 +29,12 @@ namespace InventorySystem.Controllers
 
             if (user != null)
             {
-                // Check if the user has the "Admin" role
-                if (user.Role == "Admin")
-                {
-                    // Store user details in session
-                    HttpContext.Session.SetString("UserId", user.Id.ToString());
-                    HttpContext.Session.SetString("UserFullName", user.FullName);
-
-                    // Redirect to the admin dashboard or another secured area
-                    return RedirectToAction("Index", "Dashboard");
-                }
-
-                // If the user is not an admin
-                ViewBag.ErrorMessage = "Access denied. Only admins can log in.";
-                return View("LoginPage");
+                HttpContext.Session.SetString("UserId", user.Id.ToString());
+                HttpContext.Session.SetString("UserFullName", $"{user.FirstName} {user.LastName}"); // Concatenating FirstName and LastName
+                return RedirectToAction("Index", "Dashboard");
             }
-            
-            // If login fails due to invalid credentials
-            ViewBag.ErrorMessage = "Invalid email or password.";
+
+            ViewBag.ErrorMessage = "Invalid email or password";
             return View("LoginPage");
         }
 

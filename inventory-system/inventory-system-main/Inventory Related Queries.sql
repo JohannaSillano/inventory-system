@@ -10,32 +10,25 @@ CREATE TABLE Products (
     DateExpired DATETIME NOT NULL
 );
 
-<<<<<<< HEAD
-CREATE TABLE Employee (
+CREATE TABLE Users (
+
     Id INT IDENTITY(1,1) PRIMARY KEY, -- Auto-incrementing primary key
     FirstName NVARCHAR(50) NOT NULL,   -- First name column with a maximum length of 50 characters
     LastName NVARCHAR(50) NOT NULL,   -- Last name column with a maximum length of 50 characters
     Email NVARCHAR(100) NOT NULL,      -- Email column with a maximum length of 100 characters
     Password NVARCHAR(255) NOT NULL    -- Password column with a maximum length of 255 characters (for hashed passwords)
-=======
-CREATE TABLE Employees (
-    Id INT IDENTITY(1,1) PRIMARY KEY,        -- Auto-incrementing primary key
-    FirstName NVARCHAR(50) NOT NULL,         -- First name column with a maximum length of 50 characters
-    LastName NVARCHAR(50) NOT NULL,          -- Last name column with a maximum length of 50 characters
-    Email NVARCHAR(100) NOT NULL,            -- Email column with a maximum length of 100 characters
-    Password NVARCHAR(255) NOT NULL,         -- Password column for storing hashed passwords
-    Role NVARCHAR(50) NOT NULL               -- Role column to store the employee's role
->>>>>>> origin/Edzra
 );
 
 
 CREATE TABLE UserProfiles (
     Id INT PRIMARY KEY IDENTITY(1,1), -- Auto-incrementing primary key
-    FullName NVARCHAR(255) NOT NULL, -- Required
-    Email NVARCHAR(255) NOT NULL, -- Required
-    PhoneNumber NVARCHAR(50) NOT NULL, -- Required
-    Address NVARCHAR(500) NOT NULL -- Required
+    FirstName NVARCHAR(255) NOT NULL,  -- First name (required)
+    LastName NVARCHAR(255) NOT NULL,   -- Last name (required)
+    Email NVARCHAR(255) NOT NULL,      -- Email (required)
+    PhoneNumber NVARCHAR(50) NOT NULL, -- Phone number (required)
+    Address NVARCHAR(500) NOT NULL     -- Address (required)
 );
+
 
 CREATE TABLE Sales (
     Id INT IDENTITY(1,1) PRIMARY KEY,          -- Auto-incrementing primary key
