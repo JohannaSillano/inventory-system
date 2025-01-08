@@ -28,10 +28,10 @@ namespace InventorySystem.Controllers
             if (user != null)
             {
                 HttpContext.Session.SetString("UserId", user.Id.ToString());
-                HttpContext.Session.SetString("UserFullName", user.FullName);
+                HttpContext.Session.SetString("UserFullName", $"{user.FirstName} {user.LastName}"); // Concatenating FirstName and LastName
                 return RedirectToAction("Index", "Dashboard");
             }
-            
+
             ViewBag.ErrorMessage = "Invalid email or password";
             return View("LoginPage");
         }

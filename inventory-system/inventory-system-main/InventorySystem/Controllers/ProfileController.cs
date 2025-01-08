@@ -5,6 +5,7 @@ public class ProfileController : Controller
 {
     private readonly ApplicationDbContext _context;
     private readonly ILogger<ProfileController> _logger;
+    
     public ProfileController(ApplicationDbContext context, ILogger<ProfileController> logger)
     {
         _context = context;
@@ -25,7 +26,6 @@ public class ProfileController : Controller
         // Log the UserId to the console (this will output to the console/logs)
         _logger.LogInformation($"Logged-in UserId: {userId}");
 
-
         // Fetch user profile and user details
         var profile = _context.UserProfiles.FirstOrDefault(p => p.Id == userId);
         var user = _context.Users.FirstOrDefault(u => u.Id == userId);
@@ -35,7 +35,8 @@ public class ProfileController : Controller
             // Create a default profile for new users
             profile = new UserProfile
             {
-                FullName = "",
+                FirstName = "",
+                LastName = "",
                 Email = "",
                 PhoneNumber = "",
                 Address = ""
@@ -43,6 +44,7 @@ public class ProfileController : Controller
             _context.UserProfiles.Add(profile);
             _context.SaveChanges();
         }
+
         return View(profile);
     }
 
@@ -82,13 +84,15 @@ public class ProfileController : Controller
         if (profile != null && user != null)
         {
             // Update profile information
-            profile.FullName = model.FullName;
+            profile.FirstName = model.FirstName;
+            profile.LastName = model.LastName;
             profile.PhoneNumber = model.PhoneNumber;
             profile.Address = model.Address;
             profile.Email = model.Email;
 
-            // Update email if changed
-            user.FullName = model.FullName;
+            // Update user name and email if changed
+            user.FirstName = model.FirstName;
+            user.LastName = model.LastName;
             user.Email = model.Email;
 
             _context.SaveChanges();
@@ -144,5 +148,4 @@ public class ProfileController : Controller
         TempData["SuccessMessage"] = "Password changed successfully!";
         return RedirectToAction("ProfilePage");
     }
-    
 }
