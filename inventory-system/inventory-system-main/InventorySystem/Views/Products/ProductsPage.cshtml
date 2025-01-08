@@ -41,6 +41,8 @@
                 <th>Stock Quantity</th>
                 <th>Category</th>
                 <th>Date Added</th>
+                <th>Date Expired</th>
+                <th>Status</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -50,12 +52,25 @@
                 <tr>
                     <td>@product.Name</td>
                     <td class="description-column">@product.Description</td>
-                    <td>@string.Format("{0:C}", product.Price)</td>
+                    <td>₱@product.Price.ToString("N2")</td>
                     <td>@product.StockQuantity</td>
                     <td>@product.Category</td>
                     <td>@product.DateAdded.ToString("yyyy-MM-dd")</td>
+                    <td>@product.DateExpired.ToString("yyyy-MM-dd")</td>
+                    <td class="stock-status">
+                        @if (product.StockQuantity > 10 && (product.DateExpired >= DateTime.Now)) {
+                            <p class="high-stock">High Stock</p>
+                        } else if ((product.StockQuantity >= 1) && (product.StockQuantity <= 10) && (product.DateExpired >= DateTime.Now)) {
+                            <p class="low-stock">Low Stock</p>
+                        } else if (product.StockQuantity == 0 && (product.DateExpired >= DateTime.Now)) {
+                            <p class="out-of-stock">Out of Stock</p>
+                        } else {
+                            <p class="expired">Expired</p>
+                        }
+
+                    </td>
                     <td class="action-container">
-                         <!-- Edit Button with Pencil Icon -->
+                        <!-- Edit Button with Pencil Icon -->
                         <a asp-controller="Products" asp-action="EditProductPage" asp-route-id="@product.Id" class="btn btn-warning action-butt">
                             <i class="fa-solid fa-pencil-alt cust-icon"></i>
                         </a>
@@ -63,7 +78,7 @@
                         <!-- Delete Button with Trash Icon -->
                         <form asp-action="DeleteProduct" asp-route-id="@product.Id" method="post" class="d-inline" style="margin-left: 2px;">
                             <button type="submit" class="btn btn-danger btn-sm">
-                                <i class="fa-solid fa-trash cust-icon"></i> 
+                                <i class="fa-solid fa-trash cust-icon"></i>
                             </button>
                         </form>
                     </td>

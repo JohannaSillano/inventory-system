@@ -6,7 +6,8 @@ CREATE TABLE Products (
     StockQuantity INT NOT NULL,
     Category NVARCHAR(255) NOT NULL,
     IsDeleted BIT NOT NULL,
-    DateAdded DATETIME NOT NULL DEFAULT GETDATE() -- Added column
+    DateAdded DATETIME NOT NULL DEFAULT GETDATE(), -- Added column
+    DateExpired DATETIME NOT NULL
 );
 
 <<<<<<< HEAD

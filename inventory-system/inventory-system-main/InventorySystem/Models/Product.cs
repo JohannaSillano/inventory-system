@@ -24,6 +24,8 @@ namespace InventorySystem.Models
         public bool IsDeleted { get; set; } // New column for soft delete
         [Required]
         public DateTime DateAdded { get; set; } // New column for the date the product was added
+        [Required]
+        public DateTime DateExpired { get; set; } // New column for the date the product was added
 
     }
 }
