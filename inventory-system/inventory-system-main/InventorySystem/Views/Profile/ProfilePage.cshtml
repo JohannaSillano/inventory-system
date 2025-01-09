@@ -180,12 +180,12 @@
 
     <!-- Add Product Button -->
     <div class="d-flex flex-row justify-content-end mb-3" style="width: 1076px; margin-left: 75px;">
-        <a asp-action="AddProductPage" class="btn btn-success"><i class="fa-solid fa-plus-circle"></i> Add Product</a>
+        <a asp-action="AddProductPage" class="btn btn-success"><i class="fa-solid fa-plus-circle"></i> Add Employee</a>
     </div>
 
     <!-- Employee Profiles -->
     <div class="container">
-        @foreach (var EmployeeProfile in Model)
+        @foreach (var EmployeeProfile in Model) //Show all employee profiles
         {
             <div class="card">
                 <div class="card-body">

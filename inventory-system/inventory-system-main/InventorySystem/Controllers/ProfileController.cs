@@ -12,7 +12,6 @@ public class ProfileController : Controller
         _logger = logger;
     }
 
-    // Display the profile page
 // Display the profile page for all employees
 public IActionResult ProfilePage()
 {
@@ -20,7 +19,6 @@ public IActionResult ProfilePage()
     var profiles = _context.EmployeeProfiles.ToList();
     return View(profiles); // Pass the list of profiles to the view
 }
-
 
     public IActionResult EditProfile()
     {
