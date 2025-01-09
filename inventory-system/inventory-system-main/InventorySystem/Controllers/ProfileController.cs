@@ -13,44 +13,14 @@ public class ProfileController : Controller
     }
 
     // Display the profile page
-    public IActionResult ProfilePage()
-    {
-        // Retrieve the logged-in user's ID from session (as string) and convert to int
-        var userIdString = HttpContext.Session.GetString("UserId");
-        if (string.IsNullOrEmpty(userIdString) || !int.TryParse(userIdString, out int userId))
-        {
-            // If the session doesn't contain a valid UserId, redirect to login page
-            return RedirectToAction("LoginPage", "Login");
-        }
+// Display the profile page for all employees
+public IActionResult ProfilePage()
+{
+        // Fetch all employee profiles
+    var profiles = _context.EmployeeProfiles.ToList();
+    return View(profiles); // Pass the list of profiles to the view
+}
 
-        // Log the UserId to the console (this will output to the console/logs)
-        _logger.LogInformation($"Logged-in UserId: {userId}");
-
-        // Fetch employee profile and user details
-        var profile = _context.EmployeeProfiles.FirstOrDefault(p => p.Id == userId);
-        var user = _context.Employees.FirstOrDefault(u => u.Id == userId);
-
-        if (profile == null)
-        {
-            // Create a default profile for new employees
-            profile = new EmployeeProfile
-            {
-                FirstName = "",
-                LastName = "",
-                Email = "",
-                PhoneNumber = "",
-                Address = "",
-                Role = user?.Role ?? "DefaultRole" // Set the role property
-            };
-            _context.EmployeeProfiles.Add(profile);
-            _context.SaveChanges();
-        }
-
-        // Pass the user role to the view
-        ViewBag.UserRole = user?.Role; // Store the role in ViewBag
-
-        return View(profile);
-    }
 
     public IActionResult EditProfile()
     {
