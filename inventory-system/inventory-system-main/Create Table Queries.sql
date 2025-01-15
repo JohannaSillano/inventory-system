@@ -6,8 +6,8 @@ CREATE TABLE Products (
     StockQuantity INT NOT NULL,
     Category NVARCHAR(255) NOT NULL,
     IsDeleted BIT NOT NULL,
-    DateAdded DATETIME NOT NULL DEFAULT GETDATE(), -- Added column
-    DateExpired DATETIME NOT NULL
+    DateAdded DATETIME2 NOT NULL DEFAULT GETDATE(), -- Added column
+    DateExpired DATETIME2 NOT NULL
 );
 
 CREATE TABLE Employees (
@@ -31,7 +31,7 @@ CREATE TABLE EmployeeProfiles (
 
 CREATE TABLE Sales (
     Id INT IDENTITY(1,1) PRIMARY KEY,          -- Auto-incrementing primary key
-    DatePurchased DATETIME NOT NULL DEFAULT GETDATE(), -- Date of the sale with default value
+    DatePurchased DATETIME2 NOT NULL DEFAULT GETDATE(), -- Date of the sale with default value
     Quantity INT NOT NULL,                     -- Quantity of products sold
     TotalAmount DECIMAL(18, 2) NOT NULL,        -- Total price for the sale
     ProductId INT NOT NULL,                    -- Foreign key reference to Products
