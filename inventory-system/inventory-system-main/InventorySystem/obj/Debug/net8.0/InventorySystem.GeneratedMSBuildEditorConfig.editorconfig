@@ -40,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcUHJvZHVjdHNQYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/emaca/Desktop/SIA1 Integration/inventory-system/inventory-system/inventory-system-main/InventorySystem/Views/Profile/AddEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxBZGRFbXBsb3llZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/emaca/Desktop/SIA1 Integration/inventory-system/inventory-system/inventory-system-main/InventorySystem/Views/Profile/ChangePasswordPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxDaGFuZ2VQYXNzd29yZFBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -50,6 +54,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/emaca/Desktop/SIA1 Integration/inventory-system/inventory-system/inventory-system-main/InventorySystem/Views/Profile/ProfilePage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxQcm9maWxlUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emaca/Desktop/SIA1 Integration/inventory-system/inventory-system/inventory-system-main/InventorySystem/Views/Sales/SalesPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNcU2FsZXNQYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/emaca/Desktop/SIA1 Integration/inventory-system/inventory-system/inventory-system-main/InventorySystem/Views/Shared/Error.cshtml]

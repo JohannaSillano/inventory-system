@@ -7,6 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 // AddControllersWithViews() is added as a service because controllers in this system return Views
 builder.Services.AddControllersWithViews();
 
+// Add HttpClient as a service
+builder.Services.AddHttpClient();
+
 // Configure DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));

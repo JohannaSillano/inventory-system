@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025_Inventory_Management\\inventory-system\\inventory-system-main\\InventorySystem\\InventorySystem.csproj": {}
+    "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\InventorySystem.csproj": {}
   },
   "projects": {
-    "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025_Inventory_Management\\inventory-system\\inventory-system-main\\InventorySystem\\InventorySystem.csproj": {
+    "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\InventorySystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025_Inventory_Management\\inventory-system\\inventory-system-main\\InventorySystem\\InventorySystem.csproj",
+        "projectUniqueName": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\InventorySystem.csproj",
         "projectName": "InventorySystem",
-        "projectPath": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025_Inventory_Management\\inventory-system\\inventory-system-main\\InventorySystem\\InventorySystem.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025_Inventory_Management\\inventory-system\\inventory-system-main\\InventorySystem\\obj\\",
+        "projectPath": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\InventorySystem.csproj",
+        "packagesPath": "C:\\Users\\emaca\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\emaca\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
