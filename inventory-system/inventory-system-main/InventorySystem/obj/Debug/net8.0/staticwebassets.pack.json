@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\wwwroot\\css\\CircleLogo.png",
+      "PackagePath": "staticwebassets\\css\\CircleLogo.png"
+    },
+    {
       "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\wwwroot\\css\\MiniMart.jpg",
       "PackagePath": "staticwebassets\\css\\MiniMart.jpg"
     },

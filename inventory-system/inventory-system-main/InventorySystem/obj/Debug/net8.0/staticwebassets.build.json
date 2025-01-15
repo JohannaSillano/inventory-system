@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uHEHerzIuTjhkjFyOMEct6lK7ieVDZlLWGtwR3O3uC0=",
+  "Hash": "AIy+mEVSZssSBZlRbaFX38lcu2NdhTQ3ipjAddaqxzc=",
   "Source": "InventorySystem",
   "BasePath": "_content/InventorySystem",
   "Mode": "Default",
@@ -38,6 +38,27 @@
       "OriginalItemSpec": "wwwroot\\css\\addproduct.css"
     },
     {
+      "Identity": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\wwwroot\\css\\CircleLogo.png",
+      "SourceId": "InventorySystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\wwwroot\\",
+      "BasePath": "_content/InventorySystem",
+      "RelativePath": "css/CircleLogo#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5w0ox3s515",
+      "Integrity": "ezjfL8zqqJKLJEN5mVX/FzzF5nVp6ZRDGkVyFyqCDRE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\CircleLogo.png"
+    },
+    {
       "Identity": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\wwwroot\\css\\dashboard.css",
       "SourceId": "InventorySystem",
       "SourceType": "Discovered",
@@ -73,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0eiwjn99ne",
-      "Integrity": "6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU=",
+      "Fingerprint": "dv1orvjrqy",
+      "Integrity": "hxnQ1SFHZArD7x+34DZPN7XrppoLS1PfTzNlF1izABE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\loginpage.css"
@@ -1613,6 +1634,88 @@
       ]
     },
     {
+      "Route": "css/CircleLogo.5w0ox3s515.png",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\wwwroot\\css\\CircleLogo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20671"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ezjfL8zqqJKLJEN5mVX/FzzF5nVp6ZRDGkVyFyqCDRE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 20:21:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5w0ox3s515"
+        },
+        {
+          "Name": "label",
+          "Value": "css/CircleLogo.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ezjfL8zqqJKLJEN5mVX/FzzF5nVp6ZRDGkVyFyqCDRE="
+        }
+      ]
+    },
+    {
+      "Route": "css/CircleLogo.png",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\wwwroot\\css\\CircleLogo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20671"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ezjfL8zqqJKLJEN5mVX/FzzF5nVp6ZRDGkVyFyqCDRE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 20:21:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ezjfL8zqqJKLJEN5mVX/FzzF5nVp6ZRDGkVyFyqCDRE="
+        }
+      ]
+    },
+    {
       "Route": "css/dashboard.css",
       "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\wwwroot\\css\\dashboard.css",
       "Selectors": [],
@@ -1695,51 +1798,6 @@
       ]
     },
     {
-      "Route": "css/loginpage.0eiwjn99ne.css",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\wwwroot\\css\\loginpage.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3797"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 14:21:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0eiwjn99ne"
-        },
-        {
-          "Name": "label",
-          "Value": "css/loginpage.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU="
-        }
-      ]
-    },
-    {
       "Route": "css/loginpage.css",
       "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\wwwroot\\css\\loginpage.css",
       "Selectors": [],
@@ -1750,7 +1808,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3797"
+          "Value": "3752"
         },
         {
           "Name": "Content-Type",
@@ -1758,11 +1816,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU=\""
+          "Value": "\"hxnQ1SFHZArD7x+34DZPN7XrppoLS1PfTzNlF1izABE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 14:21:30 GMT"
+          "Value": "Wed, 15 Jan 2025 20:36:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1772,7 +1830,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU="
+          "Value": "sha256-hxnQ1SFHZArD7x+34DZPN7XrppoLS1PfTzNlF1izABE="
+        }
+      ]
+    },
+    {
+      "Route": "css/loginpage.dv1orvjrqy.css",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\wwwroot\\css\\loginpage.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3752"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hxnQ1SFHZArD7x+34DZPN7XrppoLS1PfTzNlF1izABE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 20:36:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dv1orvjrqy"
+        },
+        {
+          "Name": "label",
+          "Value": "css/loginpage.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hxnQ1SFHZArD7x+34DZPN7XrppoLS1PfTzNlF1izABE="
         }
       ]
     },
@@ -1881,7 +1984,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 16:48:32 GMT"
+          "Value": "Wed, 15 Jan 2025 20:09:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1918,7 +2021,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 16:48:32 GMT"
+          "Value": "Wed, 15 Jan 2025 20:09:06 GMT"
         },
         {
           "Name": "Cache-Control",
