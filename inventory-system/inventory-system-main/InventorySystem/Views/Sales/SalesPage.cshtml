@@ -1,0 +1,83 @@
+@model InventorySystem.Models.TransactionDataResponse
+
+@{
+    ViewData["Title"] = "Sales Data";
+}
+
+<!-- Include CSS files -->
+<link rel="stylesheet" href="~/css/salespage.css" asp-append-version="true" />
+
+<!-- Page Header with Go Back Icon -->
+<div class="d-flex align-items-center mb-4" style="width: 1000px; margin: 30px 0 0 26px; align-items:center;">
+    <a asp-action="Index" asp-controller="Dashboard" class="text-decoration-none me-3 text-dark" title="Go Back">
+        <i class="fa-solid fa-arrow-left fs-3"></i>
+    </a>
+    <h1 class="mb-0 fw-bold" style="color: #343a40; font-size: 28px; margin:0;">Sales</h1>
+</div>
+
+<!-- Success Message Alert -->
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["SuccessMessage"]
+        <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+<!-- Total Sales and Stats -->
+<div class="d-flex justify-content-between align-items-center mb-3" style="width: 1076px; margin-left: 75px;">
+    <p><strong>Total Sales: </strong>₱@Model.TotalSales.ToString("N2")</p>
+    <p><strong>Total Transactions: </strong>@Model.Transactions.Count</p>
+    <p><strong>Total Products: </strong>@Model.TotalDistinctProducts</p>
+</div>
+
+<!-- Centered Table Container with Animation -->
+<div class="table-container">
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Product Name</th>
+                <th>Product Category</th>
+                <th>Transaction Date</th>  
+                <th>Quantity</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var transaction in Model.Transactions)
+            {
+                <tr>
+                    <td>@transaction.ProductName</td>
+                    <td>@transaction.ProductCategory</td>
+                    <td>@transaction.TransactionDate.ToString("yyyy-MM-dd")</td>
+                    <td>@transaction.Quantity</td>
+                    <td>₱@transaction.Amount.ToString("N2")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <script>
+        // Function to adjust the margin-bottom based on the table container's height
+        function adjustTableMargin() {
+            var tableContainer = document.querySelector('.table-container');
+            var containerHeight = tableContainer.offsetHeight;
+
+            if (containerHeight < 820) {
+                // Decrease height by 50-70px and add margin-bottom
+                var marginBottom = Math.floor((820 - containerHeight) / 50) * 50; // Increment margin in steps of 50px
+                tableContainer.style.marginBottom = Math.max(marginBottom, 50) + "px"; // Minimum margin of 50px
+            }
+        }
+
+        // Adjust margin on initial load
+        adjustTableMargin();
+
+        // Adjust margin on window resize
+        window.addEventListener('resize', adjustTableMargin);
+    </script>
+}
