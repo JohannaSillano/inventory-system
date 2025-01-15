@@ -1,7 +1,7 @@
-@model InventorySystem.Models.UserProfile
+@model IEnumerable<InventorySystem.Models.EmployeeProfile>
 
 @{
-    ViewData["Title"] = "Users";
+    ViewData["Title"] = "Employees";
 }
 
 <!DOCTYPE html>
@@ -22,18 +22,18 @@
     <style>
         body {
             font-family: "Poppins", serif;
-            color: #000000; /* Set the default text color to black */
+            color: #000000;
         }
 
         .profile-info p {
             font-size: 20px;
-            color: #000000; /* Ensure the text color is black */
+            color: #000000;
         }
 
         h1 {
             font-size: 1.8rem;
             margin: 0;
-            color: #000000; /* Set the title color to black */
+            color: #000000;
         }
 
         .d-flex.align-items-center a {
@@ -45,28 +45,57 @@
             margin: 0;
         }
 
+        /* Card Container */
         .card {
             background-color: #F5F5F5;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            width: 750px;
-            height: 100%;
+            width: 100%;  /* Make card width 100% to fit inside container */
             margin-top: 12px;
+            display: flex;
+            flex-direction: row;  /* Change card layout to horizontal */
+            align-items: center;  /* Center content vertically */
+            margin-bottom: 20px;
         }
 
+        /* Card Body */
         .card-body {
             padding: 20px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            width: 100%;
+        }
+
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex: 1;  /* Allow profile container to take available space */
+        }
+
+        .profile-info {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .actions-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            margin-left: 20px; /* Add some space between profile and actions */
         }
 
         .card:hover {
-            background-color: #EEEEEE; /* Change the background color on hover */
-            transform: scale(1.02); /* Optional: add a slight zoom effect */
+            background-color: #EEEEEE;
+            transform: scale(1.02);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
 
+        /* Buttons */
         .btn {
             display: flex;
             align-items: center;
@@ -97,90 +126,104 @@
             border: none;
         }
 
-        /* Hover effect for buttons */
         .btn:hover {
             transform: scale(1.05);
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            background-color: #0056b3; /* Change for primary button on hover */
+            background-color: #0056b3;
         }
 
         .btn-secondary:hover {
-            background-color: #0056b3; /* Change for secondary button on hover */
+            background-color: #0056b3;
         }
 
-        /* Header alignment adjustments */
         .page-header {
             display: flex;
             flex-direction: row;
             align-items: center;
-            gap: 13px; /* Space between go-back icon and title */
+            gap: 13px;
             margin-top: 40px;
             margin-left: 17px;
         }
 
-        .profile-container {
+        .container {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 20px;
+            width: 100%;
+            align-items: center;
         }
 
-        .profile-info {
-            display: flex;
-            flex-direction: row;
-            gap: 8px;
-        }
-
-        .actions-container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 10px;
+        .profile-info p {
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
     <!-- Page Header with Go Back Icon -->
-    <div class="page-header">
-        <a asp-controller="Dashboard" asp-action="Index" class="text-decoration-none" title="Go Back">
-            <i class="fa-solid fa-arrow-left fs-3 text-dark"></i>
+    <div class="d-flex align-items-center mb-4" style="width: 1000px; margin: 30px 0 0 26px; align-items:center;">
+        <a asp-action="Index" asp-controller="Dashboard" class="text-decoration-none me-3 text-dark" title="Go Back">
+            <i class="fa-solid fa-arrow-left fs-3"></i>
         </a>
-        <h1 class="fw-bold">Users</h1>
+        <h1 class="mb-0 fw-bold" style="color: #343a40; font-size: 28px; margin:0;">Employees</h1>
     </div>
 
-    <!-- Profile Details in a Card -->
-    <div class="container d-flex justify-content-center mt-4" style="align-items: flex-start">
-        <div class="card">
-            <div class="card-body">
-                <div class="profile-container">
-                    <div class="profile-info">
-                        <p>Full Name: </p>
-                        <p>@Model.FullName</p>
-                    </div>
-                    <div class="profile-info">
-                        <p>Email: </p>
-                        <p>@Model.Email</p>
-                    </div>
-                    <div class="profile-info">
-                        <p>Phone Number: </p>
-                        <p>@Model.PhoneNumber</p>
-                    </div>
-                    <div class="profile-info">
-                        <p>Address: </p>
-                        <p>@Model.Address</p>
-                    </div>
-                </div>
+    <!-- Success Message Alert -->
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["SuccessMessage"]
+            <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
 
-                <!-- Action Buttons -->
-                <div class="actions-container">
-                    <a asp-action="EditProfile" class="btn btn-primary">
-                        <i class="fa-solid fa-user-edit"></i>Edit Profile
-                    </a>
-                    <a asp-action="ChangePasswordPage" class="btn btn-secondary">
-                        <i class="fa-solid fa-key"></i>Change Password
-                    </a>
+    <!-- Add Product Button -->
+    <div class="d-flex flex-row justify-content-end mb-3" style="width: 1076px; margin-left: 75px;">
+        <a asp-action="AddProductPage" class="btn btn-success"><i class="fa-solid fa-plus-circle"></i> Add Employee</a>
+    </div>
+
+    <!-- Employee Profiles -->
+    <div class="container">
+        @foreach (var EmployeeProfile in Model) //Show all employee profiles
+        {
+            <div class="card">
+                <div class="card-body">
+                    <div class="profile-container">
+                        <div class="profile-info">
+                            <p>Full Name: </p>
+                            <p>@EmployeeProfile.FirstName @EmployeeProfile.LastName</p>
+                        </div>
+                        <div class="profile-info">
+                            <p>Email: </p>
+                            <p>@EmployeeProfile.Email</p>
+                        </div>
+                        <div class="profile-info">
+                            <p>Phone Number: </p>
+                            <p>@EmployeeProfile.PhoneNumber</p>
+                        </div>
+                        <div class="profile-info">
+                            <p>Address: </p>
+                            <p>@EmployeeProfile.Address</p>
+                        </div>
+                        <div class="profile-info">
+                            <p>Role: </p>
+                            <p>@EmployeeProfile.Role</p>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="actions-container">
+                        <a asp-action="EditProfile" class="btn btn-primary">
+                            <i class="fa-solid fa-user-edit"></i>Edit Profile
+                        </a>
+                        <a asp-action="ChangePasswordPage" class="btn btn-secondary">
+                            <i class="fa-solid fa-key"></i>Change Password
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
+        }
     </div>
 
     <!-- Custom Script for Animations -->

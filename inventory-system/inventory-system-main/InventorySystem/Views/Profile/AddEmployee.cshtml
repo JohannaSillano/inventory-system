@@ -1,7 +1,7 @@
 @model InventorySystem.Models.EmployeeProfile
 
 @{
-    ViewData["Title"] = "Edit Profile";
+    ViewData["Title"] = "Add Employee";
 }
 
 <!-- Include CSS files -->
@@ -10,63 +10,69 @@
 <div class="fade-in">
     <!-- Page Header with Go Back Icon -->
     <div class="d-flex align-items-center mb-4" style="width: 1000px; margin: 20px 0 0 26px;">
-        <a asp-action="ProfilePage" class="text-decoration-none me-3 text-dark" title="Go Back">
+        <a asp-action="EmployeeList" class="text-decoration-none me-3 text-dark" title="Go Back">
             <i class="fa-solid fa-arrow-left fs-3"></i>
         </a>
-        <h2 class="mb-0 fw-bold" style="font-size: 1.8rem; color: #343a40;">Edit Profile</h2>
+        <h2 class="mb-0 fw-bold" style="font-size: 1.8rem; color: #343a40;">Add Employee</h2>
     </div>
 
     <!-- Centered Form in a Card -->
     <div class="container d-flex justify-content-center" style="margin-bottom: 80px;">
         <div class="card shadow-sm p-4" style="width: 100%; max-width: 750px; border-radius: 12px; background-color: #ffffff;">
             <div class="card-body">
-                <form asp-action="UpdateProfile" method="post">
+                <form asp-action="AddEmployee" method="post">
                     <!-- First Name -->
                     <div class="form-group mb-4">
                         <label for="FirstName" class="fw-semibold" style="font-size: 1.1rem; color: #555;">First Name</label>
-                        <input type="text" class="form-control form-control-lg" id="FirstName" name="FirstName" value="@Model.FirstName" required>
+                        <input type="text" class="form-control form-control-lg" id="FirstName" name="FirstName" placeholder="Enter first name" required>
                     </div>
 
                     <!-- Last Name -->
                     <div class="form-group mb-4">
                         <label for="LastName" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Last Name</label>
-                        <input type="text" class="form-control form-control-lg" id="LastName" name="LastName" value="@Model.LastName" required>
+                        <input type="text" class="form-control form-control-lg" id="LastName" name="LastName" placeholder="Enter last name" required>
                     </div>
 
                     <!-- Email -->
                     <div class="form-group mb-4">
                         <label for="Email" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Email</label>
-                        <input type="email" class="form-control form-control-lg" id="Email" name="Email" value="@Model.Email" required>
+                        <input type="email" class="form-control form-control-lg" id="Email" name="Email" placeholder="Enter email address" required>
                     </div>
 
                     <!-- Phone Number -->
                     <div class="form-group mb-4">
                         <label for="PhoneNumber" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Phone Number</label>
-                        <input type="text" class="form-control form-control-lg" id="PhoneNumber" name="PhoneNumber" value="@Model.PhoneNumber">
+                        <input type="text" class="form-control form-control-lg" id="PhoneNumber" name="PhoneNumber" placeholder="Enter phone number">
                     </div>
 
                     <!-- Address -->
                     <div class="form-group mb-4">
                         <label for="Address" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Address</label>
-                        <input type="text" class="form-control form-control-lg" id="Address" name="Address" value="@Model.Address">
+                        <input type="text" class="form-control form-control-lg" id="Address" name="Address" placeholder="Enter address">
                     </div>
 
-                    <!-- Role (New Field) -->
+                    <!-- Role -->
                     <div class="form-group mb-4">
                         <label for="Role" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Role</label>
-                        <input type="text" class="form-control form-control-lg" id="Role" name="Role" value="@Model.Role" required>
+                        <input type="text" class="form-control form-control-lg" id="Role" name="Role" placeholder="Enter role" required>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group mb-4">
+                        <label for="Password" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Password</label>
+                        <input type="password" class="form-control form-control-lg" id="Password" name="Password" placeholder="Enter password" required>
                     </div>
 
                     <!-- Submit Button -->
                     <div class="text-center">
                         <button type="submit" class="btn btn-success btn-lg px-5" style="border-radius: 25px; font-size: 1.1rem;">
-                            <i class="fa-solid fa-check-circle me-2"></i> Save Changes
+                            <i class="fa-solid fa-check-circle me-2"></i> Add Employee
                         </button>
                     </div>
 
                     <!-- Cancel Button -->
                     <div class="text-center mt-3">
-                        <a asp-action="ProfilePage" class="btn btn-secondary btn-lg px-5" style="border-radius: 25px; font-size: 1.1rem;">
+                        <a asp-action="EmployeeList" class="btn btn-secondary btn-lg px-5" style="border-radius: 25px; font-size: 1.1rem;">
                             <i class="fa-solid fa-times-circle me-2"></i> Cancel
                         </a>
                     </div>

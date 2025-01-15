@@ -36,13 +36,13 @@
                     <!-- Base Price -->
                     <div class="form-group mb-4">
                         <label for="Price" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Base Price</label>
-                        <input type="number" step="0.01" class="form-control form-control-lg" id="Price" asp-for="Price" placeholder="e.g., 59.99" required />
+                        <input type="number" step="0.01" class="form-control form-control-lg" id="Price" asp-for="Price" placeholder="e.g., 59.99" min="1" required />
                     </div>
 
                     <!-- Stock Quantity -->
                     <div class="form-group mb-4">
                         <label for="StockQuantity" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Stock Quantity</label>
-                        <input type="number" class="form-control form-control-lg" id="StockQuantity" asp-for="StockQuantity" placeholder="e.g., 100" required />
+                        <input type="number" class="form-control form-control-lg" id="StockQuantity" asp-for="StockQuantity" placeholder="e.g., 100" min="1" required />
                     </div>
 
                     <!-- Category -->
@@ -55,6 +55,12 @@
                     <div class="form-group mb-4">
                         <label for="DateAdded" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Date Added</label>
                         <input type="text" id="DateAdded" class="form-control form-control-lg" asp-for="DateAdded" placeholder="Select date" required />
+                    </div>
+
+                    <!-- Date Expired -->
+                    <div class="form-group mb-4">
+                        <label for="DateExpired" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Date Expired</label>
+                        <input type="text" id="DateExpired" class="form-control form-control-lg" name="DateExpired" placeholder="Select date" required>
                     </div>
 
                     <!-- Submit Button -->
@@ -78,6 +84,12 @@
     flatpickr("#DateAdded", {
         dateFormat: "Y-m-d",
         defaultDate: "@Model.DateAdded.ToString("yyyy-MM-dd")",
+        enableTime: false
+    });
+
+    flatpickr("#DateExpired", {
+        dateFormat: "Y-m-d",
+        defaultDate: "@Model.DateExpired.ToString("yyyy-MM-dd")",
         enableTime: false
     });
 

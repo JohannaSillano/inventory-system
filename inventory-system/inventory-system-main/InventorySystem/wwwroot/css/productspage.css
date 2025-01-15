@@ -77,6 +77,10 @@ th:nth-child(1), td:nth-child(1) { /* Name Column */
     min-width: 160px;
 }
 
+th:nth-child(2), td:nth-child(2) { /* Name Column */
+    min-width: 160px;
+}
+
 th:nth-child(3), td:nth-child(3) { /* Name Column */
     min-width: 140px;
 }
@@ -89,10 +93,19 @@ th:nth-child(7), td:nth-child(7) { /* Actions Column */
     min-width: 150px;
 }
 
+th:nth-child(8), td:nth-child(8) { /* Actions Column */
+    min-width: 150px;
+}
+
+th:nth-child(9), td:nth-child(9) { /* Actions Column */
+    min-width: 140px;
+}
+
 /* Center-align the headers for Price, Stock Quantity, Category, Date Added, and Actions columns */
-th:nth-child(3), th:nth-child(4), th:nth-child(5), th:nth-child(6), th:nth-child(7),
-td:nth-child(3), td:nth-child(4), td:nth-child(5), td:nth-child(6), td:nth-child(7) {
+th:nth-child(3), th:nth-child(4), th:nth-child(5), th:nth-child(6), th:nth-child(7), th:nth-child(8), th:nth-child(9),
+td:nth-child(3), td:nth-child(4), td:nth-child(5), td:nth-child(6), td:nth-child(7), th:nth-child(8), th:nth-child(9) {
     text-align: center;
+    align-items: center;
 }
 
 /* Styling for the table to make sure it takes up full width but is centered */
@@ -126,4 +139,33 @@ td:nth-child(3), td:nth-child(4), td:nth-child(5), td:nth-child(6), td:nth-child
     margin: 0;
     width: 40px;
     margin-right: 2px;
+}
+
+.stock-status p {
+    padding: 4px 4px;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+}
+
+.low-stock {
+    background-color: yellow;
+    color: black;
+}
+
+.high-stock {
+    background-color: green;
+    color: white;
+}
+
+.out-of-stock {
+    background-color: red;
+    color: white;
+}
+
+.expired {
+    background-color: gray;
+    color: white;
 }

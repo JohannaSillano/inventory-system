@@ -5,46 +5,20 @@ public class ProfileController : Controller
 {
     private readonly ApplicationDbContext _context;
     private readonly ILogger<ProfileController> _logger;
+
     public ProfileController(ApplicationDbContext context, ILogger<ProfileController> logger)
     {
         _context = context;
         _logger = logger;
     }
 
-    // Display the profile page
-    public IActionResult ProfilePage()
-    {
-        // Retrieve the logged-in user's ID from session (as string) and convert to int
-        var userIdString = HttpContext.Session.GetString("UserId");
-        if (string.IsNullOrEmpty(userIdString) || !int.TryParse(userIdString, out int userId))
-        {
-            // If the session doesn't contain a valid UserId, redirect to login page
-            return RedirectToAction("LoginPage", "Login");
-        }
-
-        // Log the UserId to the console (this will output to the console/logs)
-        _logger.LogInformation($"Logged-in UserId: {userId}");
-
-
-        // Fetch user profile and user details
-        var profile = _context.UserProfiles.FirstOrDefault(p => p.Id == userId);
-        var user = _context.Users.FirstOrDefault(u => u.Id == userId);
-
-        if (profile == null)
-        {
-            // Create a default profile for new users
-            profile = new UserProfile
-            {
-                FullName = "",
-                Email = "",
-                PhoneNumber = "",
-                Address = ""
-            };
-            _context.UserProfiles.Add(profile);
-            _context.SaveChanges();
-        }
-        return View(profile);
-    }
+// Display the profile page for all employees
+public IActionResult ProfilePage()
+{
+        // Fetch all employee profiles
+    var profiles = _context.EmployeeProfiles.ToList();
+    return View(profiles); // Pass the list of profiles to the view
+}
 
     public IActionResult EditProfile()
     {
@@ -55,13 +29,22 @@ public class ProfileController : Controller
             // If the session doesn't contain a valid UserId, redirect to login page
             return RedirectToAction("LoginPage", "Login");
         }
-        var profile = _context.UserProfiles.FirstOrDefault(p => p.Id == userId);
+
+        var profile = _context.EmployeeProfiles.FirstOrDefault(p => p.Id == userId);
+        var user = _context.Employees.FirstOrDefault(u => u.Id == userId);
+
+        if (profile != null)
+        {
+            // Pass the role of the user to the view as well
+            ViewBag.UserRole = user?.Role; // Store the role in ViewBag
+        }
+
         return View(profile);
     }
 
     // Update profile
     [HttpPost]
-    public IActionResult UpdateProfile(UserProfile model)
+    public IActionResult UpdateProfile(EmployeeProfile model)
     {
         if (!ModelState.IsValid)
         {
@@ -76,19 +59,21 @@ public class ProfileController : Controller
             return RedirectToAction("LoginPage", "Login");
         }
 
-        var profile = _context.UserProfiles.FirstOrDefault(p => p.Id == userId);
-        var user = _context.Users.FirstOrDefault(u => u.Id == userId);
+        var profile = _context.EmployeeProfiles.FirstOrDefault(p => p.Id == userId);
+        var user = _context.Employees.FirstOrDefault(u => u.Id == userId);
 
         if (profile != null && user != null)
         {
             // Update profile information
-            profile.FullName = model.FullName;
+            profile.FirstName = model.FirstName;
+            profile.LastName = model.LastName;
             profile.PhoneNumber = model.PhoneNumber;
             profile.Address = model.Address;
             profile.Email = model.Email;
 
-            // Update email if changed
-            user.FullName = model.FullName;
+            // Update user name, email, and role if changed
+            user.FirstName = model.FirstName;
+            user.LastName = model.LastName;
             user.Email = model.Email;
 
             _context.SaveChanges();
@@ -115,7 +100,7 @@ public class ProfileController : Controller
             return RedirectToAction("LoginPage", "Login");
         }
 
-        var user = _context.Users.FirstOrDefault(u => u.Id == userId);
+        var user = _context.Employees.FirstOrDefault(u => u.Id == userId);
         if (user == null)
         {
             TempData["ErrorMessage"] = "User not found.";
@@ -144,5 +129,4 @@ public class ProfileController : Controller
         TempData["SuccessMessage"] = "Password changed successfully!";
         return RedirectToAction("ProfilePage");
     }
-    
 }
