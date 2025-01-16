@@ -4,6 +4,12 @@ VALUES
 ('Bengie', 'Villesco','cashier1@gmail.com', '1234', 'Cashier'),
 ('Johanna', 'Sillano','cashier2@gmail.com', '1234', 'Cashier');
 
+INSERT INTO EmployeeProfiles (FirstName, LastName, Email, PhoneNumber, Address, Role)
+VALUES
+    ('Alice', 'Guo', 'admin@gmail.com', '1234', '123 Main Street', 'Admin'),
+    ('Bengie', 'Villesco', 'cashier1@gmail.com', '1234', '456 Oak Avenue', 'Cashier'),
+    ('Johanna', 'Sillano', 'cashier2@gmail.com', '1234', '789 Pine Lane', 'Cashier');
+
 INSERT INTO Products (Name, Description, Price, StockQuantity, Category, IsDeleted, DateAdded, DateExpired)
 VALUES 
 ('Chess', 'Description of Product 1', 19.99, 100, 'Toy', 0, GETDATE(), '2026-01-01'),
