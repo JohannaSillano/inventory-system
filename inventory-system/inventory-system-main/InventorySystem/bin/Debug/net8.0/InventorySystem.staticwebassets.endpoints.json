@@ -29,7 +29,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 20:21:57 GMT"
+          "Value": "Thu, 16 Jan 2025 17:55:28 GMT"
         }
       ],
       "EndpointProperties": [
@@ -74,7 +74,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 20:21:57 GMT"
+          "Value": "Thu, 16 Jan 2025 17:55:28 GMT"
         }
       ],
       "EndpointProperties": [
@@ -111,7 +111,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 14:21:30 GMT"
+          "Value": "Thu, 16 Jan 2025 17:54:59 GMT"
         }
       ],
       "EndpointProperties": [
@@ -148,7 +148,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 14:21:30 GMT"
+          "Value": "Thu, 16 Jan 2025 17:54:59 GMT"
         }
       ],
       "EndpointProperties": [
@@ -357,7 +357,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 20:36:26 GMT"
+          "Value": "Thu, 16 Jan 2025 17:55:28 GMT"
         }
       ],
       "EndpointProperties": [
@@ -394,7 +394,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 20:36:26 GMT"
+          "Value": "Thu, 16 Jan 2025 17:55:28 GMT"
         }
       ],
       "EndpointProperties": [
@@ -439,7 +439,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 20:09:06 GMT"
+          "Value": "Thu, 16 Jan 2025 17:55:28 GMT"
         }
       ],
       "EndpointProperties": [
@@ -476,7 +476,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 20:09:06 GMT"
+          "Value": "Thu, 16 Jan 2025 17:55:28 GMT"
         }
       ],
       "EndpointProperties": [
@@ -491,6 +491,88 @@
         {
           "Name": "label",
           "Value": "css/productspage.css"
+        }
+      ]
+    },
+    {
+      "Route": "css/salespage.510ecubrbb.css",
+      "AssetFile": "css/salespage.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2573"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V9SFNJ8Hpkfti59rgdn7OeDmLvh1bSTiragwWjUyRUw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 16 Jan 2025 19:00:40 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "510ecubrbb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V9SFNJ8Hpkfti59rgdn7OeDmLvh1bSTiragwWjUyRUw="
+        },
+        {
+          "Name": "label",
+          "Value": "css/salespage.css"
+        }
+      ]
+    },
+    {
+      "Route": "css/salespage.css",
+      "AssetFile": "css/salespage.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2573"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V9SFNJ8Hpkfti59rgdn7OeDmLvh1bSTiragwWjUyRUw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 16 Jan 2025 19:00:40 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V9SFNJ8Hpkfti59rgdn7OeDmLvh1bSTiragwWjUyRUw="
         }
       ]
     },

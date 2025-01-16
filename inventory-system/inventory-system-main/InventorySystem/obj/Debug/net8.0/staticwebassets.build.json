@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AIy+mEVSZssSBZlRbaFX38lcu2NdhTQ3ipjAddaqxzc=",
+  "Hash": "j1vs/i6HYlQnAPrUXvZpMc4RVYIrp+6pwKFkXUMim08=",
   "Source": "InventorySystem",
   "BasePath": "_content/InventorySystem",
   "Mode": "Default",
@@ -141,6 +141,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\productspage.css"
+    },
+    {
+      "Identity": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\wwwroot\\css\\salespage.css",
+      "SourceId": "InventorySystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\wwwroot\\",
+      "BasePath": "_content/InventorySystem",
+      "RelativePath": "css/salespage#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "510ecubrbb",
+      "Integrity": "V9SFNJ8Hpkfti59rgdn7OeDmLvh1bSTiragwWjUyRUw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\salespage.css"
     },
     {
       "Identity": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\wwwroot\\css\\site.css",
@@ -1656,7 +1677,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 20:21:57 GMT"
+          "Value": "Thu, 16 Jan 2025 17:55:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1701,7 +1722,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 20:21:57 GMT"
+          "Value": "Thu, 16 Jan 2025 17:55:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1820,7 +1841,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 20:36:26 GMT"
+          "Value": "Thu, 16 Jan 2025 17:55:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1857,7 +1878,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 20:36:26 GMT"
+          "Value": "Thu, 16 Jan 2025 17:55:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1902,7 +1923,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 14:21:30 GMT"
+          "Value": "Thu, 16 Jan 2025 17:54:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1939,7 +1960,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 14:21:30 GMT"
+          "Value": "Thu, 16 Jan 2025 17:54:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1984,7 +2005,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 20:09:06 GMT"
+          "Value": "Thu, 16 Jan 2025 17:55:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2021,7 +2042,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 20:09:06 GMT"
+          "Value": "Thu, 16 Jan 2025 17:55:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2040,6 +2061,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-/p0v5+JnSb6TkR/ldDEK+3FebQ8X+6vqwrKCWZmTuqE="
+        }
+      ]
+    },
+    {
+      "Route": "css/salespage.510ecubrbb.css",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\wwwroot\\css\\salespage.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2573"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V9SFNJ8Hpkfti59rgdn7OeDmLvh1bSTiragwWjUyRUw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 16 Jan 2025 19:00:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "510ecubrbb"
+        },
+        {
+          "Name": "label",
+          "Value": "css/salespage.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V9SFNJ8Hpkfti59rgdn7OeDmLvh1bSTiragwWjUyRUw="
+        }
+      ]
+    },
+    {
+      "Route": "css/salespage.css",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\wwwroot\\css\\salespage.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2573"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V9SFNJ8Hpkfti59rgdn7OeDmLvh1bSTiragwWjUyRUw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 16 Jan 2025 19:00:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V9SFNJ8Hpkfti59rgdn7OeDmLvh1bSTiragwWjUyRUw="
         }
       ]
     },

@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\css\\productspage.css"
     },
     {
+      "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\wwwroot\\css\\salespage.css",
+      "PackagePath": "staticwebassets\\css\\salespage.css"
+    },
+    {
       "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\inventory-system\\inventory-system\\inventory-system-main\\InventorySystem\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
