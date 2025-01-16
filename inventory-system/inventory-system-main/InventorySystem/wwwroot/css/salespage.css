@@ -1,0 +1,129 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #343a40;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Card Container */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 30px auto;
+    max-width: 100%; /* Match the table's width */
+}
+
+/* Card Styling */
+.card {
+    flex: 1;
+    margin: 0 10px; /* Equal spacing between cards */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #6c757d;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: #343a40;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Table Container Styling */
+.table-container {
+    margin: 30px auto;
+    max-width: 100%;
+    overflow-x: auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1.5s forwards;
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    margin-bottom: 0;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+}
+
+.table thead th {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+/* Center Alignment for Table and Cards */
+.row, .table-container {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Fade-in Animation for the Table */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 10px 0;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }s
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+.search-bar {
+    width: 100%; /* Make it stretch to match the width of the parent */
+    padding: 0.5rem;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 30px auto;
+}

@@ -26,11 +26,22 @@
     </div>
 }
 
+<input type="text" class="search-bar" id="search-bar" placeholder="Search sales made by Transaction Number..."/>
+
 <!-- Total Sales and Stats -->
-<div class="d-flex justify-content-between align-items-center mb-3" style="width: 1076px; margin-left: 75px;">
-    <p><strong>Total Sales: </strong>₱@Model.TotalSales.ToString("N2")</p>
-    <p><strong>Total Transactions: </strong>@Model.Transactions.Count</p>
-    <p><strong>Total Products: </strong>@Model.TotalDistinctProducts</p>
+<div class="row">
+    <div class="card">
+        <h3>Total Sales</h3>
+        <p>₱@Model.TotalSales.ToString("N2")</p>
+    </div>
+    <div class="card">
+        <h3>Sold Products</h3>
+        <p>@Model.TotalSoldProducts</p>
+    </div>
+    <div class="card">
+        <h3>Total Products</h3>
+        <p>@Model.TotalDistinctProducts</p>
+    </div>
 </div>
 
 <!-- Centered Table Container with Animation -->
@@ -38,6 +49,7 @@
     <table class="table table-striped table-bordered table-hover">
         <thead class="table-dark">
             <tr>
+                <th>Transaction Number</th>
                 <th>Product Name</th>
                 <th>Product Category</th>
                 <th>Transaction Date</th>  
@@ -49,6 +61,7 @@
             @foreach (var transaction in Model.Transactions)
             {
                 <tr>
+                    <td>@transaction.TransactionNumber</td>
                     <td>@transaction.ProductName</td>
                     <td>@transaction.ProductCategory</td>
                     <td>@transaction.TransactionDate.ToString("yyyy-MM-dd")</td>
@@ -62,6 +75,42 @@
 
 @section Scripts {
     <script>
+        $(document).ready(function() {
+            // Add a row for the "No transactions found" message
+            var noTransactionsRow = $(
+                '<tr class="no-transactions-row" style="display:none; text-align: center;">' +
+                '<td colspan="100%" style="text-align: center; padding: 20px; font-size: 16px;">No transactions found.</td>' +
+                '</tr>'
+            );
+            $('table tbody').append(noTransactionsRow); // Append it to the table body
+
+            // Trigger search on input change
+            $('#search-bar').on('input', function() {
+                var searchTerm = $(this).val().toLowerCase(); // Get the input value and convert to lowercase
+                var visibleRows = 0;
+
+                $('table tbody tr').each(function() {
+                    if ($(this).hasClass('no-transactions-row')) return; // Skip the "No transactions found" row
+
+                    var transactionNumber = $(this).find('td:first').text().toLowerCase(); // Only check the first column (Transaction Number)
+
+                    if (transactionNumber.indexOf(searchTerm) > -1) {
+                        $(this).show(); // Show the row if the transaction number contains the search term
+                        visibleRows++;
+                    } else {
+                        $(this).hide(); // Hide the row if the transaction number doesn't contain the search term
+                    }
+                });
+
+                // Show or hide the "No transactions found" message based on visible rows
+                if (visibleRows === 0) {
+                    noTransactionsRow.show(); // Show the message
+                } else {
+                    noTransactionsRow.hide(); // Hide the message
+                }
+            });
+        });
+
         // Function to adjust the margin-bottom based on the table container's height
         function adjustTableMargin() {
             var tableContainer = document.querySelector('.table-container');
@@ -81,3 +130,5 @@
         window.addEventListener('resize', adjustTableMargin);
     </script>
 }
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
