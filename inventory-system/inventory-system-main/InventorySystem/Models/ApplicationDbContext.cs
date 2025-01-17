@@ -8,6 +8,5 @@ namespace InventorySystem.Models
 
         public required DbSet<Product> Products { get; set; }
         public required DbSet<Employee> Employees { get; set; }
-        public required DbSet<EmployeeProfile> EmployeeProfiles { get; set;}
     }
 }

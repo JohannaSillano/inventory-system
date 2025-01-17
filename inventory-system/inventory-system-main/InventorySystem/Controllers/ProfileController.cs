@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using InventorySystem.Models;
+using Microsoft.Extensions.Logging;
 
 public class ProfileController : Controller
 {
@@ -12,118 +13,123 @@ public class ProfileController : Controller
         _logger = logger;
     }
 
-// Display the profile page for all employees
-public IActionResult ProfilePage()
-{
-        // Fetch all employee profiles
-    var profiles = _context.EmployeeProfiles.ToList();
-    return View(profiles); // Pass the list of profiles to the view
-}
-
-    public IActionResult EditProfile()
+    // Display the profile page for all employees
+    public IActionResult ProfilePage()
     {
-        // Retrieve the logged-in user's ID from session (as string) and convert to int
-        var userIdString = HttpContext.Session.GetString("UserId");
-        if (string.IsNullOrEmpty(userIdString) || !int.TryParse(userIdString, out int userId))
-        {
-            // If the session doesn't contain a valid UserId, redirect to login page
-            return RedirectToAction("LoginPage", "Login");
-        }
-
-        var profile = _context.EmployeeProfiles.FirstOrDefault(p => p.Id == userId);
-        var user = _context.Employees.FirstOrDefault(u => u.Id == userId);
-
-        if (profile != null)
-        {
-            // Pass the role of the user to the view as well
-            ViewBag.UserRole = user?.Role; // Store the role in ViewBag
-        }
-
-        return View(profile);
+        var profiles = _context.Employees.ToList();
+        return View(profiles); // Pass the list of profiles to the view
     }
 
-    // Update profile
+    // Display the form to add a new employee
+    public IActionResult AddEmployee()
+    {
+        return View(); // Return the view for adding an employee
+    }
+
+    // Handle form submission to add a new employee
     [HttpPost]
-    public IActionResult UpdateProfile(EmployeeProfile model)
+    public IActionResult AddEmployee(Employee model)
     {
         if (!ModelState.IsValid)
         {
-            return View("EditProfile", model);
+            return View("AddEmployee", model); // Return form with validation errors
         }
 
-        // Retrieve the logged-in user's ID from session (as string) and convert to int
-        var userIdString = HttpContext.Session.GetString("UserId");
-        if (string.IsNullOrEmpty(userIdString) || !int.TryParse(userIdString, out int userId))
+        var newEmployee = new Employee
         {
-            // If the session doesn't contain a valid UserId, redirect to login page
-            return RedirectToAction("LoginPage", "Login");
-        }
+            FirstName = model.FirstName,
+            LastName = model.LastName,
+            Email = model.Email,
+            PhoneNumber = model.PhoneNumber,
+            Address = model.Address,
+            Password = model.Password, // Remember to hash passwords in production
+            Role = model.Role
+        };
 
-        var profile = _context.EmployeeProfiles.FirstOrDefault(p => p.Id == userId);
-        var user = _context.Employees.FirstOrDefault(u => u.Id == userId);
+        _context.Employees.Add(newEmployee);
+        _context.SaveChanges();
 
-        if (profile != null && user != null)
-        {
-            // Update profile information
-            profile.FirstName = model.FirstName;
-            profile.LastName = model.LastName;
-            profile.PhoneNumber = model.PhoneNumber;
-            profile.Address = model.Address;
-            profile.Email = model.Email;
-
-            // Update user name, email, and role if changed
-            user.FirstName = model.FirstName;
-            user.LastName = model.LastName;
-            user.Email = model.Email;
-
-            _context.SaveChanges();
-            TempData["SuccessMessage"] = "Profile updated successfully!";
-        }
-
+        TempData["SuccessMessage"] = "Employee added successfully!";
         return RedirectToAction("ProfilePage");
     }
 
-    // Display the EditPasswordPage
+    // Display the form to edit an existing employee
+    public IActionResult EditEmployee(int id)
+    {
+        var employee = _context.Employees.FirstOrDefault(e => e.Id == id);
+
+        if (employee == null)
+        {
+            return NotFound(); // Return a 404 if the employee doesn't exist
+        }
+
+        return View(employee); // Return the view with the employee data to be edited
+    }
+
+    // Handle form submission to update the employee information
+    [HttpPost]
+    public IActionResult EditEmployee(int id, Employee model)
+    {
+        if (!ModelState.IsValid)
+        {
+            return View("EditEmployee", model); // Return form with validation errors
+        }
+
+        var employee = _context.Employees.FirstOrDefault(e => e.Id == id);
+
+        if (employee == null)
+        {
+            return NotFound(); // Return a 404 if the employee doesn't exist
+        }
+
+        // Update properties of the tracked entity
+        employee.FirstName = model.FirstName;
+        employee.LastName = model.LastName;
+        employee.Email = model.Email;
+        employee.PhoneNumber = model.PhoneNumber;
+        employee.Address = model.Address;
+        employee.Password = model.Password; // Remember to hash passwords in production
+        employee.Role = model.Role;
+
+        // Mark the entity as modified (only if it's not already tracked)
+        
+        _context.SaveChanges();
+
+        TempData["SuccessMessage"] = "Employee updated successfully!";
+        return RedirectToAction("ProfilePage"); // Redirect to ProfilePage after successful update
+    }
+
+    // Display the ChangePassword page
     public IActionResult ChangePasswordPage()
     {
         return View();
     }
 
-    // Change or Update the password
+    // Handle password change form submission
     [HttpPost]
-    public IActionResult ChangePassword(string currentPassword, string newPassword, string confirmPassword)
+    public IActionResult ChangePasswordPage(int id, string currentPassword, string newPassword, string confirmPassword)
     {
-        // Retrieve the logged-in user's ID from session (as string) and convert to int
-        var userIdString = HttpContext.Session.GetString("UserId");
-        if (string.IsNullOrEmpty(userIdString) || !int.TryParse(userIdString, out int userId))
-        {
-            return RedirectToAction("LoginPage", "Login");
-        }
+        var employee = _context.Employees.FirstOrDefault(e => e.Id == id);
 
-        var user = _context.Employees.FirstOrDefault(u => u.Id == userId);
-        if (user == null)
+        if (employee == null)
         {
-            TempData["ErrorMessage"] = "User not found.";
+            TempData["ErrorMessage"] = "Employee not found.";
             return RedirectToAction("ChangePasswordPage");
         }
 
-        // Check if the current password matches the user's password (this is without hashing)
-        if (user.Password != currentPassword)
+        if (employee.Password != currentPassword)
         {
             TempData["ErrorMessage"] = "Current password is incorrect.";
             return RedirectToAction("ChangePasswordPage");
         }
 
-        // Check if the new password and confirm password match
         if (newPassword != confirmPassword)
         {
             TempData["ErrorMessage"] = "New password and confirm password do not match.";
             return RedirectToAction("ChangePasswordPage");
         }
 
-        // Update the password without hashing it in the Users table
-        user.Password = newPassword;
-
+        employee.Password = newPassword;
         _context.SaveChanges();
 
         TempData["SuccessMessage"] = "Password changed successfully!";
