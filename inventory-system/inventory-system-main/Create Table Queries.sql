@@ -15,17 +15,9 @@ CREATE TABLE Employees (
     FirstName NVARCHAR(50) NOT NULL,      -- First name column with a maximum length of 50 characters
     LastName NVARCHAR(50) NOT NULL,       -- Last name column with a maximum length of 50 characters
     Email NVARCHAR(100) NOT NULL,         -- Email column with a maximum length of 100 characters
-    Password NVARCHAR(255) NOT NULL,      -- Password column with a maximum length of 255 characters (for hashed passwords)
-    Role NVARCHAR(50) NOT NULL            -- Role column to store user roles (e.g., Admin, User, etc.)
-);
-
-CREATE TABLE EmployeeProfiles (
-    Id INT PRIMARY KEY IDENTITY(1,1),    -- Auto-incrementing primary key
-    FirstName NVARCHAR(255) NOT NULL,     -- First name (required)
-    LastName NVARCHAR(255) NOT NULL,      -- Last name (required)
-    Email NVARCHAR(255) NOT NULL,         -- Email (required)
     PhoneNumber NVARCHAR(50) NOT NULL,    -- Phone number (required)
     Address NVARCHAR(500) NOT NULL,       -- Address (required)
+    Password NVARCHAR(255) NOT NULL,      -- Password column with a maximum length of 255 characters (for hashed passwords)
     Role NVARCHAR(50) NOT NULL            -- Role column to store user roles (e.g., Admin, User, etc.)
 );
 

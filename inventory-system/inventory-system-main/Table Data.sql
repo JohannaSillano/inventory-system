@@ -1,14 +1,8 @@
-INSERT INTO Employees (FirstName, LastName, Email, Password, Role)
+INSERT INTO Employees (FirstName, LastName, Email, PhoneNumber, Address, Password, Role)
 VALUES 
-('Alice', 'Guo','admin@gmail.com', '1234', 'Admin'),
-('Bengie', 'Villesco','cashier1@gmail.com', '1234', 'Cashier'),
-('Johanna', 'Sillano','cashier2@gmail.com', '1234', 'Cashier');
-
-INSERT INTO EmployeeProfiles (FirstName, LastName, Email, PhoneNumber, Address, Role)
-VALUES
-    ('Alice', 'Guo', 'admin@gmail.com', '1234', '123 Main Street', 'Admin'),
-    ('Bengie', 'Villesco', 'cashier1@gmail.com', '1234', '456 Oak Avenue', 'Cashier'),
-    ('Johanna', 'Sillano', 'cashier2@gmail.com', '1234', '789 Pine Lane', 'Cashier');
+('Alice', 'Guo', 'admin@gmail.com', '123-456-7890', '123 Admin St, Cityville', '1234', 'Admin'),
+('Bengie', 'Villesco', 'cashier1@gmail.com', '987-654-3210', '456 Cashier Ave, Towncity', '1234', 'Cashier'),
+('Johanna', 'Sillano', 'cashier2@gmail.com', '555-123-4567', '789 Worker Blvd, Metrocity', '1234', 'Cashier');
 
 INSERT INTO Products (Name, Description, Price, StockQuantity, Category, IsDeleted, DateAdded, DateExpired)
 VALUES 
