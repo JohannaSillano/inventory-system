@@ -12,6 +12,7 @@ namespace InventorySystem.Models
 
     public class Transaction
     {
+        public required string TransactionNumber {get; set; }
         public DateTime TransactionDate { get; set; }
         public required string ProductName { get; set; }
         public required string ProductCategory { get; set; }
