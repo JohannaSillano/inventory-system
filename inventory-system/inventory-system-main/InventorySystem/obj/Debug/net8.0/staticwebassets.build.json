@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "j1vs/i6HYlQnAPrUXvZpMc4RVYIrp+6pwKFkXUMim08=",
+  "Hash": "V0x1CzIWQmEAZISlQf0ooXtTV8FDqkWVOeBAJtvue1o=",
   "Source": "InventorySystem",
   "BasePath": "_content/InventorySystem",
   "Mode": "Default",
@@ -1677,7 +1677,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 17:55:28 GMT"
+          "Value": "Mon, 20 Jan 2025 07:17:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1722,7 +1722,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 17:55:28 GMT"
+          "Value": "Mon, 20 Jan 2025 07:17:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1841,7 +1841,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 17:55:28 GMT"
+          "Value": "Mon, 20 Jan 2025 07:17:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1878,7 +1878,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 17:55:28 GMT"
+          "Value": "Mon, 20 Jan 2025 07:17:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2087,7 +2087,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 19:00:40 GMT"
+          "Value": "Mon, 20 Jan 2025 07:17:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2132,7 +2132,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 19:00:40 GMT"
+          "Value": "Mon, 20 Jan 2025 07:17:21 GMT"
         },
         {
           "Name": "Cache-Control",
