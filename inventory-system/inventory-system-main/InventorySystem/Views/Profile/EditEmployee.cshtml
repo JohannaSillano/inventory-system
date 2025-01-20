@@ -21,23 +21,25 @@
         <div class="card shadow-sm p-4" style="width: 100%; max-width: 750px; border-radius: 12px; background-color: #ffffff;">
             <div class="card-body">
                 <form asp-action="EditEmployee" method="post">
-                    <input type="hidden" name="Id" value="@Model.Id" />
+                    <!-- Hidden Employee ID -->
+                    <input type="hidden" asp-for="Id" />
+
                     <!-- First Name -->
                     <div class="form-group mb-4">
                         <label for="FirstName" class="fw-semibold" style="font-size: 1.1rem; color: #555;">First Name</label>
-                        <input type="text" class="form-control form-control-lg" id="FirstName" name="FirstName" value="@Model.FirstName">
+                        <input type="text" class="form-control form-control-lg" id="FirstName" name="FirstName" value="@Model.FirstName" required>
                     </div>
 
                     <!-- Last Name -->
                     <div class="form-group mb-4">
                         <label for="LastName" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Last Name</label>
-                        <input type="text" class="form-control form-control-lg" id="LastName" name="LastName" value="@Model.LastName">
+                        <input type="text" class="form-control form-control-lg" id="LastName" name="LastName" value="@Model.LastName" required>
                     </div>
 
                     <!-- Email -->
                     <div class="form-group mb-4">
                         <label for="Email" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Email</label>
-                        <input type="email" class="form-control form-control-lg" id="Email" name="Email" value="@Model.Email">
+                        <input type="email" class="form-control form-control-lg" id="Email" name="Email" value="@Model.Email" required>
                     </div>
 
                     <!-- Phone Number -->
@@ -55,7 +57,19 @@
                     <!-- Role -->
                     <div class="form-group mb-4">
                         <label for="Role" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Role</label>
-                        <input type="text" class="form-control form-control-lg" id="Role" name="Role" value="@Model.Role">
+                        <input type="text" class="form-control form-control-lg" id="Role" name="Role" value="@Model.Role" required>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group mb-4">
+                        <label for="Password" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Password</label>
+                        <input type="password" class="form-control form-control-lg" id="Password" name="Password" required>
+                    </div>
+
+                    <!-- Confirm New Password -->
+                    <div class="form-group mb-4">
+                        <label for="ConfirmPassword" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Confirm New Password</label>
+                        <input type="password" class="form-control form-control-lg" id="ConfirmPassword" name="ConfirmPassword" required>
                     </div>
 
                     <!-- Submit Button -->

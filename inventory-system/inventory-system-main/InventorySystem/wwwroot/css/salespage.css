@@ -22,23 +22,24 @@ body {
     margin: 0 10px; /* Equal spacing between cards */
     padding: 20px;
     border-radius: 8px;
-    background-color: #ffffff;
+    background-color: #2b60b4;
     box-shadow: rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: white;
 }
 
 .card h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #6c757d;
+    color: white;
 }
 
 .card p {
     font-size: 18px;
     font-weight: bold;
     margin: 0;
-    color: #343a40;
+    color: white;
 }
 
 .card:hover {
@@ -126,4 +127,9 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-top: 30px auto;
+}
+
+table th {
+    background-color: #2b60b4 !important;
+    color: white !important;
 }

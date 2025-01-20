@@ -92,7 +92,6 @@ public class ProfileController : Controller
         employee.Role = model.Role;
 
         // Mark the entity as modified (only if it's not already tracked)
-        
         _context.SaveChanges();
 
         TempData["SuccessMessage"] = "Employee updated successfully!";
