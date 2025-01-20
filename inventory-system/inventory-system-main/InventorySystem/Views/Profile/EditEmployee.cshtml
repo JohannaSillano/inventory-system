@@ -1,7 +1,7 @@
-@model InventorySystem.Models.EmployeeProfile
+@model InventorySystem.Models.Employee
 
 @{
-    ViewData["Title"] = "Edit Profile";
+    ViewData["Title"] = "Edit Employee";
 }
 
 <!-- Include CSS files -->
@@ -13,30 +13,31 @@
         <a asp-action="ProfilePage" class="text-decoration-none me-3 text-dark" title="Go Back">
             <i class="fa-solid fa-arrow-left fs-3"></i>
         </a>
-        <h2 class="mb-0 fw-bold" style="font-size: 1.8rem; color: #343a40;">Edit Profile</h2>
+        <h2 class="mb-0 fw-bold" style="font-size: 1.8rem; color: #343a40;">Edit Employee</h2>
     </div>
 
     <!-- Centered Form in a Card -->
     <div class="container d-flex justify-content-center" style="margin-bottom: 80px;">
         <div class="card shadow-sm p-4" style="width: 100%; max-width: 750px; border-radius: 12px; background-color: #ffffff;">
             <div class="card-body">
-                <form asp-action="UpdateProfile" method="post">
+                <form asp-action="EditEmployee" method="post">
+                    <input type="hidden" name="Id" value="@Model.Id" />
                     <!-- First Name -->
                     <div class="form-group mb-4">
                         <label for="FirstName" class="fw-semibold" style="font-size: 1.1rem; color: #555;">First Name</label>
-                        <input type="text" class="form-control form-control-lg" id="FirstName" name="FirstName" value="@Model.FirstName" required>
+                        <input type="text" class="form-control form-control-lg" id="FirstName" name="FirstName" value="@Model.FirstName">
                     </div>
 
                     <!-- Last Name -->
                     <div class="form-group mb-4">
                         <label for="LastName" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Last Name</label>
-                        <input type="text" class="form-control form-control-lg" id="LastName" name="LastName" value="@Model.LastName" required>
+                        <input type="text" class="form-control form-control-lg" id="LastName" name="LastName" value="@Model.LastName">
                     </div>
 
                     <!-- Email -->
                     <div class="form-group mb-4">
                         <label for="Email" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Email</label>
-                        <input type="email" class="form-control form-control-lg" id="Email" name="Email" value="@Model.Email" required>
+                        <input type="email" class="form-control form-control-lg" id="Email" name="Email" value="@Model.Email">
                     </div>
 
                     <!-- Phone Number -->
@@ -51,10 +52,10 @@
                         <input type="text" class="form-control form-control-lg" id="Address" name="Address" value="@Model.Address">
                     </div>
 
-                    <!-- Role (New Field) -->
+                    <!-- Role -->
                     <div class="form-group mb-4">
                         <label for="Role" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Role</label>
-                        <input type="text" class="form-control form-control-lg" id="Role" name="Role" value="@Model.Role" required>
+                        <input type="text" class="form-control form-control-lg" id="Role" name="Role" value="@Model.Role">
                     </div>
 
                     <!-- Submit Button -->
@@ -97,12 +98,6 @@
     body {
         background-color: #f4f6f9;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        width: auto 1000px;
-        margin-bottom: 50px;
-    }
-
-    h2 {
-        color: #495057;
     }
 
     .card {
@@ -110,34 +105,13 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .form-control {
-        border: 1px solid #ced4da;
-        border-radius: 8px;
-        font-size: 1rem;
-    }
-
     .form-control:focus {
         box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
         border-color: #80bdff;
     }
 
-    .btn-success {
-        background-color: #28a745;
-        border: none;
-        transition: all 0.3s ease;
-    }
-
     .btn-success:hover {
         background-color: #218838;
         transform: translateY(-2px);
-    }
-
-    .fade-in {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    .fw-semibold {
-        font-weight: 600;
     }
 </style>

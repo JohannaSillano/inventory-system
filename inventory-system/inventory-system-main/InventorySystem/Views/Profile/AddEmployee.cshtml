@@ -1,4 +1,4 @@
-@model InventorySystem.Models.EmployeeProfile
+@model InventorySystem.Models.Employee
 
 @{
     ViewData["Title"] = "Add Employee";
@@ -10,7 +10,7 @@
 <div class="fade-in">
     <!-- Page Header with Go Back Icon -->
     <div class="d-flex align-items-center mb-4" style="width: 1000px; margin: 20px 0 0 26px;">
-        <a asp-action="EmployeeList" class="text-decoration-none me-3 text-dark" title="Go Back">
+        <a asp-action="ProfilePage" class="text-decoration-none me-3 text-dark" title="Go Back">
             <i class="fa-solid fa-arrow-left fs-3"></i>
         </a>
         <h2 class="mb-0 fw-bold" style="font-size: 1.8rem; color: #343a40;">Add Employee</h2>
@@ -24,44 +24,58 @@
                     <!-- First Name -->
                     <div class="form-group mb-4">
                         <label for="FirstName" class="fw-semibold" style="font-size: 1.1rem; color: #555;">First Name</label>
-                        <input type="text" class="form-control form-control-lg" id="FirstName" name="FirstName" placeholder="Enter first name" required>
+                        <input type="text" class="form-control form-control-lg" id="FirstName" name="FirstName" required>
                     </div>
 
                     <!-- Last Name -->
                     <div class="form-group mb-4">
                         <label for="LastName" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Last Name</label>
-                        <input type="text" class="form-control form-control-lg" id="LastName" name="LastName" placeholder="Enter last name" required>
+                        <input type="text" class="form-control form-control-lg" id="LastName" name="LastName" required>
                     </div>
 
                     <!-- Email -->
                     <div class="form-group mb-4">
                         <label for="Email" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Email</label>
-                        <input type="email" class="form-control form-control-lg" id="Email" name="Email" placeholder="Enter email address" required>
+                        <input type="email" class="form-control form-control-lg" id="Email" name="Email" required>
                     </div>
 
                     <!-- Phone Number -->
                     <div class="form-group mb-4">
                         <label for="PhoneNumber" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Phone Number</label>
-                        <input type="text" class="form-control form-control-lg" id="PhoneNumber" name="PhoneNumber" placeholder="Enter phone number">
+                        <input type="text" class="form-control form-control-lg" id="PhoneNumber" name="PhoneNumber">
                     </div>
 
                     <!-- Address -->
                     <div class="form-group mb-4">
                         <label for="Address" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Address</label>
-                        <input type="text" class="form-control form-control-lg" id="Address" name="Address" placeholder="Enter address">
+                        <input type="text" class="form-control form-control-lg" id="Address" name="Address">
                     </div>
 
-                    <!-- Role -->
+                    <!-- Role (New Field) -->
                     <div class="form-group mb-4">
                         <label for="Role" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Role</label>
-                        <input type="text" class="form-control form-control-lg" id="Role" name="Role" placeholder="Enter role" required>
+                        <input type="text" class="form-control form-control-lg" id="Role" name="Role" required>
                     </div>
 
                     <!-- Password -->
                     <div class="form-group mb-4">
                         <label for="Password" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Password</label>
-                        <input type="password" class="form-control form-control-lg" id="Password" name="Password" placeholder="Enter password" required>
+                        <input type="password" class="form-control form-control-lg" id="Password" name="Password" required>
                     </div>
+
+                    <!-- Confirm Password -->
+                    <div class="form-group mb-4">
+                        <label for="ConfirmPassword" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Confirm Password</label>
+                        <input type="password" class="form-control form-control-lg" id="ConfirmPassword" name="ConfirmPassword" required>
+                    </div>
+
+                    <!-- Display Error Message if Passwords Don't Match -->
+                    @if (TempData["ErrorMessage"] != null)
+                    {
+                        <div class="alert alert-danger mt-3">
+                            @TempData["ErrorMessage"]
+                        </div>
+                    }
 
                     <!-- Submit Button -->
                     <div class="text-center">
@@ -72,7 +86,7 @@
 
                     <!-- Cancel Button -->
                     <div class="text-center mt-3">
-                        <a asp-action="EmployeeList" class="btn btn-secondary btn-lg px-5" style="border-radius: 25px; font-size: 1.1rem;">
+                        <a asp-action="ProfilePage" class="btn btn-secondary btn-lg px-5" style="border-radius: 25px; font-size: 1.1rem;">
                             <i class="fa-solid fa-times-circle me-2"></i> Cancel
                         </a>
                     </div>
