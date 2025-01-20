@@ -52,23 +52,33 @@
                 <th>Transaction Number</th>
                 <th>Product Name</th>
                 <th>Product Category</th>
-                <th>Transaction Date</th>  
+                <th>Transaction Date</th>
                 <th>Quantity</th>
                 <th>Amount</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var transaction in Model.Transactions)
+            @if (Model.Transactions != null)
+            {
+                @foreach (var transaction in Model.Transactions)
+                {
+                    <tr>
+                        <td>@transaction.TransactionNumber</td>
+                        <td>@transaction.ProductName</td>
+                        <td>@transaction.ProductCategory</td>
+                        <td>@transaction.TransactionDate.ToString("yyyy-MM-dd")</td>
+                        <td>@transaction.Quantity</td>
+                        <td>₱@transaction.Amount.ToString("N2")</td>
+                    </tr>
+                }
+            }
+            else
             {
                 <tr>
-                    <td>@transaction.TransactionNumber</td>
-                    <td>@transaction.ProductName</td>
-                    <td>@transaction.ProductCategory</td>
-                    <td>@transaction.TransactionDate.ToString("yyyy-MM-dd")</td>
-                    <td>@transaction.Quantity</td>
-                    <td>₱@transaction.Amount.ToString("N2")</td>
+                    <td colspan="6">No transactions available.</td>
                 </tr>
             }
+
         </tbody>
     </table>
 </div>
