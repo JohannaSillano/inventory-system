@@ -11,14 +11,16 @@ CREATE TABLE Products (
 );
 
 CREATE TABLE Employees (
-    Id INT IDENTITY(1,1) PRIMARY KEY,    -- Auto-incrementing primary key
-    FirstName NVARCHAR(50) NOT NULL,      -- First name column with a maximum length of 50 characters
-    LastName NVARCHAR(50) NOT NULL,       -- Last name column with a maximum length of 50 characters
-    Email NVARCHAR(100) NOT NULL,         -- Email column with a maximum length of 100 characters
-    PhoneNumber NVARCHAR(50) NOT NULL,    -- Phone number (required)
-    Address NVARCHAR(500) NOT NULL,       -- Address (required)
-    Password NVARCHAR(255) NOT NULL,      -- Password column with a maximum length of 255 characters (for hashed passwords)
-    Role NVARCHAR(50) NOT NULL            -- Role column to store user roles (e.g., Admin, User, etc.)
+    Id INT IDENTITY(1,1) PRIMARY KEY,           -- Auto-incrementing primary key
+    FirstName NVARCHAR(50) NOT NULL,             -- First name column with a maximum length of 50 characters
+    LastName NVARCHAR(50) NOT NULL,              -- Last name column with a maximum length of 50 characters
+    Email NVARCHAR(100) NOT NULL,                -- Email column with a maximum length of 100 characters
+    PhoneNumber NVARCHAR(50) NOT NULL,           -- Phone number (required)
+    Address NVARCHAR(500) NOT NULL,              -- Address (required)
+    Password NVARCHAR(255) NOT NULL,             -- Password column with a maximum length of 255 characters (for hashed passwords)
+    Role NVARCHAR(50) NOT NULL,                  -- Role column to store user roles (e.g., Admin, User, etc.)
+    IsDeleted BIT NOT NULL DEFAULT 0,            -- Soft delete column (default to 0: not deleted)
+    DateAdded DATETIME2 NOT NULL DEFAULT GETDATE() -- Date the employee was added (default to current date and time)
 );
 
 CREATE TABLE Sales (

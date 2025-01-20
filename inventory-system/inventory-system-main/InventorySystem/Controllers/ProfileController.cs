@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using InventorySystem.Models;
 using Microsoft.Extensions.Logging;
+using System.Linq;
 
 public class ProfileController : Controller
 {
@@ -13,10 +14,11 @@ public class ProfileController : Controller
         _logger = logger;
     }
 
-    // Display the profile page for all employees
+    // Display the profile page for all employees, excluding deleted employees
     public IActionResult ProfilePage()
     {
-        var profiles = _context.Employees.ToList();
+        // Fetch only non-deleted employees
+        var profiles = _context.Employees.Where(e => !e.IsDeleted).ToList();
         return View(profiles); // Pass the list of profiles to the view
     }
 
@@ -58,9 +60,9 @@ public class ProfileController : Controller
     {
         var employee = _context.Employees.FirstOrDefault(e => e.Id == id);
 
-        if (employee == null)
+        if (employee == null || employee.IsDeleted) // Check if employee is deleted
         {
-            return NotFound(); // Return a 404 if the employee doesn't exist
+            return NotFound(); // Return a 404 if the employee doesn't exist or is deleted
         }
 
         return View(employee); // Return the view with the employee data to be edited
@@ -77,9 +79,9 @@ public class ProfileController : Controller
 
         var employee = _context.Employees.FirstOrDefault(e => e.Id == id);
 
-        if (employee == null)
+        if (employee == null || employee.IsDeleted) // Check if employee is deleted
         {
-            return NotFound(); // Return a 404 if the employee doesn't exist
+            return NotFound(); // Return a 404 if the employee doesn't exist or is deleted
         }
 
         // Update properties of the tracked entity
@@ -90,6 +92,7 @@ public class ProfileController : Controller
         employee.Address = model.Address;
         employee.Password = model.Password; // Remember to hash passwords in production
         employee.Role = model.Role;
+        
 
         // Mark the entity as modified (only if it's not already tracked)
         _context.SaveChanges();
@@ -98,40 +101,25 @@ public class ProfileController : Controller
         return RedirectToAction("ProfilePage"); // Redirect to ProfilePage after successful update
     }
 
-    // Display the ChangePassword page
-    public IActionResult ChangePasswordPage()
-    {
-        return View();
-    }
-
-    // Handle password change form submission
+    // Handle soft deletion of an employee
     [HttpPost]
-    public IActionResult ChangePasswordPage(int id, string currentPassword, string newPassword, string confirmPassword)
+    public IActionResult DeleteEmployee(int id)
     {
         var employee = _context.Employees.FirstOrDefault(e => e.Id == id);
 
-        if (employee == null)
+        if (employee == null || employee.IsDeleted)
         {
-            TempData["ErrorMessage"] = "Employee not found.";
-            return RedirectToAction("ChangePasswordPage");
+            TempData["ErrorMessage"] = "Employee not found or already deleted.";
+            return RedirectToAction("ProfilePage");
         }
 
-        if (employee.Password != currentPassword)
-        {
-            TempData["ErrorMessage"] = "Current password is incorrect.";
-            return RedirectToAction("ChangePasswordPage");
-        }
+        // Perform soft delete by setting IsDeleted to true
+        employee.IsDeleted = true;
 
-        if (newPassword != confirmPassword)
-        {
-            TempData["ErrorMessage"] = "New password and confirm password do not match.";
-            return RedirectToAction("ChangePasswordPage");
-        }
-
-        employee.Password = newPassword;
+        // Save changes
         _context.SaveChanges();
 
-        TempData["SuccessMessage"] = "Password changed successfully!";
+        TempData["SuccessMessage"] = "Employee deleted successfully!";
         return RedirectToAction("ProfilePage");
     }
 }
