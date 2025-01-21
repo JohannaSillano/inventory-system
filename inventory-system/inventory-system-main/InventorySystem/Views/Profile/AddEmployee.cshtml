@@ -20,7 +20,7 @@
     <div class="container d-flex justify-content-center" style="margin-bottom: 80px;">
         <div class="card shadow-sm p-4" style="width: 100%; max-width: 750px; border-radius: 12px; background-color: #ffffff;">
             <div class="card-body">
-                <form asp-action="AddEmployee" method="post">
+                <form id="AddEmployeeForm" asp-action="AddEmployee" method="post" onsubmit="return validatePasswordMatch()">
                     <!-- First Name -->
                     <div class="form-group mb-4">
                         <label for="FirstName" class="fw-semibold" style="font-size: 1.1rem; color: #555;">First Name</label>
@@ -110,6 +110,22 @@
             }, 100);
         });
     });
+
+    function validatePasswordMatch() {
+        var password = document.getElementById('Password').value;
+        var confirmPassword = document.getElementById('ConfirmPassword').value;
+        
+        if (password.length < 6) {
+            alert("Password must be at least 6 characters long.");
+            return false; // Prevent form submission
+    }
+
+        if (password !== confirmPassword) {
+            alert("Passwords do not match.");
+            return false; // Prevent form submission
+        }
+        return true; // Allow form submission
+    }
 </script>
 
 <!-- Custom Styling -->

@@ -13,5 +13,7 @@ namespace InventorySystem.Models
         public required string Address { get; set; } // Address column
         public required string Password { get; set; } // Store hashed passwords
         public required string Role { get; set; } // Role column
+        public bool IsDeleted { get; set; }
+        public DateTime DateAdded { get; set; } = DateTime.Now;
     }
 }
