@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     background-color: #ffffff;
-    color: #faf0ca;
+    color: #ffffff;
 }
 
 /* Animated Dashboard Heading */
@@ -10,7 +10,7 @@ h1 {
     margin-left: 70px;
     margin-top: 50px;
     font-size: 36px;
-    color: #faf0ca;
+    color: #ffffff;
     font-weight: 700;
     animation: fadeIn 2s ease-in-out;
 }
@@ -39,7 +39,7 @@ h1 {
 .chart-container {
     background: #2b60b4;
     padding: 20px 0;
-    color: #faf0ca;
+    color: #ffffff;
     border-radius: 4px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -57,7 +57,7 @@ h1 {
 
 .card {
     background: #2b60b4;
-    color: #faf0ca;
+    color: #ffffff;
     border-radius: 4px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -129,7 +129,7 @@ h1 {
 /* Card Styling */
 .card {
     background: #2b60b4;
-    color: #faf0ca;
+    color: #ffffff;
 }
 
 /* Make sure the canvas is smaller */

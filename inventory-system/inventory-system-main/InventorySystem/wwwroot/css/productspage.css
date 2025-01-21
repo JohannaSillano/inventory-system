@@ -50,14 +50,14 @@
 
 .btn-sm:hover {
     transform: scale(1.1);
-    background-color: #ff6f61; /* Change background on hover */
+    background-color: #2b2d42; /* Change background on hover */
 }
 
 /* Hover effect for edit and delete icons */
 .action-container a:hover,
 .action-container button:hover {
     transform: scale(1.2);
-    color: #ff6f61; /* Change icon color on hover */
+    color: #2b2d42; /* Change icon color on hover */
 }
 
 /* Hover effect for the "Add Product" button */
