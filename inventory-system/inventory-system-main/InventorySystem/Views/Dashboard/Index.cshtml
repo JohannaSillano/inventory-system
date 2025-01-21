@@ -78,8 +78,8 @@
                 datasets: [{
                     label: 'Top Products by Quantity',
                     data: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.TopProductsByQuantity.Select(p => p.StockQuantity))),
-                    backgroundColor: ['#caf0f8', '#588157', '#fb6f92', '#43291f', '#ffd6ff'],
-                    borderColor: '#14213d',
+                    backgroundColor: ['#77BFC7', '#20B2AA', '#AFEEEE', '#007C80', '#16E2F5'],
+                    borderColor: '#ffffff',
                     borderWidth: 1
                 }]
             },
@@ -88,7 +88,7 @@
                 plugins: {
                     legend: {
                         labels: {
-                            color: '#faf0ca',
+                            color: '#ffffff',
                             font: { size: 16 }
                         }
                     }
@@ -105,8 +105,8 @@
                 datasets: [{
                     label: 'Top Products by Price',
                     data: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.TopProductsByPrice.Select(p => p.Price))),
-                    backgroundColor: '#43291f',
-                    borderColor: '#fb6f92',
+                    backgroundColor: '#20B2AA',
+                    borderColor: '#ffffff',
                     borderWidth: 1
                 }]
             },
@@ -117,13 +117,13 @@
                     y: {
                         beginAtZero: true,
                         ticks: {
-                            color: '#faf0ca',
+                            color: '#ffffff',
                             font: { size: 16 }
                         }
                     },
                     x: {
                         ticks: {
-                            color: '#faf0ca',
+                            color: '#ffffff',
                             font: { size: 16 }
                         }
                     }
@@ -131,7 +131,7 @@
                 plugins: {
                     legend: {
                         labels: {
-                            color: '#faf0ca',
+                            color: '#ffffff',
                             font: { size: 16 }
                         }
                     }
@@ -148,8 +148,8 @@
                 datasets: [{
                     label: 'Top Categories by Stock',
                     data: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.TopCategoriesByStock.Select(c => c.StockQuantity))),
-                    backgroundColor: '#2b2d42',
-                    borderColor: '#fca311',
+                    backgroundColor: '#78C7C7',
+                    borderColor: '#ffffff',
                     borderWidth: 1
                 }]
             },
@@ -160,13 +160,13 @@
                     y: {
                         beginAtZero: true,
                         ticks: {
-                            color: '#faf0ca',
+                            color: '#ffffff',
                             font: { size: 16 }
                         }
                     },
                     x: {
                         ticks: {
-                            color: '#faf0ca',
+                            color: '#ffffff',
                             font: { size: 16 }
                         }
                     }
@@ -174,7 +174,7 @@
                 plugins: {
                     legend: {
                         labels: {
-                            color: '#faf0ca',
+                            color: '#ffffff',
                             font: { size: 16 }
                         }
                     }
@@ -196,7 +196,7 @@
             updateChartColors(quantityChart, '#2b2d42'); // Highlight color on hover
         });
         quantityChartContainer.addEventListener('mouseleave', function () {
-            updateChartColors(quantityChart, '#faf0ca'); // Revert to default color
+            updateChartColors(quantityChart, '#ffffff'); // Revert to default color
         });
 
         // Add hover effects for Price Chart
@@ -205,7 +205,7 @@
             updateChartColors(priceChart, '#2b2d42'); // Highlight color on hover
         });
         priceChartContainer.addEventListener('mouseleave', function () {
-            updateChartColors(priceChart, '#faf0ca'); // Revert to default color
+            updateChartColors(priceChart, '#ffffff'); // Revert to default color
         });
 
         // Add hover effects for Category Chart
@@ -214,7 +214,7 @@
             updateChartColors(categoryChart, '#2b2d42'); // Highlight color on hover
         });
         categoryChartContainer.addEventListener('mouseleave', function () {
-            updateChartColors(categoryChart, '#faf0ca'); // Revert to default color
+            updateChartColors(categoryChart, '#ffffff'); // Revert to default color
         });
 
     </script>

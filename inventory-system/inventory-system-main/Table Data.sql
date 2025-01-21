@@ -1,10 +1,10 @@
 -- Insert data into Employees table
 INSERT INTO Employees (FirstName, LastName, Email, PhoneNumber, Address, Password, Role)
 VALUES
-('Alice', 'Guo', 'admin@gmail.com', '123-456-7890', '123 Admin St, Cityville', '1234', 'Admin'),
-('Bengie', 'Villesco', 'cashier1@gmail.com', '987-654-3210', '456 Cashier Ave, Towncity', '1234', 'Cashier'),
-('Johanna', 'Sillano', 'cashier2@gmail.com', '555-123-4567', '789 Worker Blvd, Metrocity', '1234', 'Cashier'),
-('Edzra', 'Macas', 'cashier3@gmail.com', '654-987-3210', '101 Worker Rd, Cityville', '1234', 'Cashier');
+('Alice', 'Guo', 'admin@gmail.com', '123-456-7890', '123 Admin St, Cityville', '123456', 'Admin'),
+('Bengie', 'Villesco', 'cashier1@gmail.com', '987-654-3210', '456 Cashier Ave, Towncity', '123456', 'Cashier'),
+('Johanna', 'Sillano', 'cashier2@gmail.com', '555-123-4567', '789 Worker Blvd, Metrocity', '123456', 'Cashier'),
+('Edzra', 'Macas', 'cashier3@gmail.com', '654-987-3210', '101 Worker Rd, Cityville', '123456', 'Cashier');
 
 -- Insert data into Products table (Mini Mart products like grocery, hygiene, etc.)
 INSERT INTO Products (Name, Description, Price, StockQuantity, Category, IsDeleted, DateAdded, DateExpired)

@@ -16,6 +16,14 @@
         <h2 class="mb-0 fw-bold" style="font-size: 1.8rem; color: #343a40;">Edit Employee</h2>
     </div>
 
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
     <!-- Centered Form in a Card -->
     <div class="container d-flex justify-content-center" style="margin-bottom: 80px;">
         <div class="card shadow-sm p-4" style="width: 100%; max-width: 750px; border-radius: 12px; background-color: #ffffff;">
@@ -23,6 +31,7 @@
                 <form asp-action="EditEmployee" method="post">
                     <!-- Hidden Employee ID -->
                     <input type="hidden" asp-for="Id" />
+                    <input type="hidden" name="Password" value="@Model.Password" />
 
                     <!-- First Name -->
                     <div class="form-group mb-4">
@@ -66,11 +75,12 @@
                         <span asp-validation-for="Role" class="text-danger"></span>
                     </div>
                     
-                    <!-- Original Password Display -->
+                    <!-- Current Password Display -->
                     <div class="form-group mb-4">
                         <label for="CurrentPassword" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Current Password</label>
                         <div class="input-group">
-                            <input type="password" class="form-control form-control-lg" id="CurrentPassword" name="CurrentPassword" value="@Model.Password" readonly>
+                            <input type="password" class="form-control form-control-lg" id="CurrentPassword" 
+                                   value="@(string.IsNullOrEmpty(Model.Password) ? "" : Model.Password)" readonly>
                             <span class="input-group-text" id="showCurrentPassword" style="cursor: pointer;">
                                 <i class="fa fa-eye" id="eyeIconCurrent"></i>
                             </span>
@@ -80,30 +90,29 @@
                     <!-- Change Password Section -->
                     <div class="form-group mb-4">
                         <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="ChangePassword" name="ChangePassword" />
+                            <input type="checkbox" class="form-check-input" id="ChangePassword" name="changePassword" />
                             <label class="form-check-label" for="ChangePassword">Change Password</label>
                         </div>
                     </div>
 
-                    <!-- Password Fields (Visible only when Change Password is checked) -->
+                    <!-- Password Fields -->
                     <div id="passwordFields" style="display: none;">
                         <!-- New Password -->
                         <div class="form-group mb-4">
                             <label for="NewPassword" class="fw-semibold" style="font-size: 1.1rem; color: #555;">New Password</label>
                             <div class="input-group">
-                                <input type="password" class="form-control form-control-lg" id="NewPassword" name="Password">
+                                <input type="password" class="form-control form-control-lg" id="NewPassword" name="newPassword">
                                 <span class="input-group-text" id="showPassword" style="cursor: pointer;">
                                     <i class="fa fa-eye" id="eyeIcon"></i>
                                 </span>
                             </div>
-                            <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
 
-                        <!-- Confirm New Password -->
+                        <!-- Confirm Password -->
                         <div class="form-group mb-4">
-                            <label for="ConfirmPassword" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Confirm New Password</label>
+                            <label for="ConfirmPassword" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Confirm Password</label>
                             <div class="input-group">
-                                <input type="password" class="form-control form-control-lg" id="ConfirmPassword" name="ConfirmPassword">
+                                <input type="password" class="form-control form-control-lg" id="ConfirmPassword">
                                 <span class="input-group-text" id="showConfirmPassword" style="cursor: pointer;">
                                     <i class="fa fa-eye" id="eyeIconConfirm"></i>
                                 </span>
@@ -130,35 +139,42 @@
     </div>
 </div>
 
-<!-- Scripts -->
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
     
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-        const currentPasswordField = document.getElementById('CurrentPassword');
-        const newPasswordField = document.getElementById('NewPassword');
-        const confirmPasswordField = document.getElementById('ConfirmPassword');
-        const changePasswordCheckbox = document.getElementById('ChangePassword');
-        const passwordFields = document.getElementById('passwordFields');
+            const currentPasswordField = document.getElementById('CurrentPassword');
+            const newPasswordField = document.getElementById('NewPassword');
+            const confirmPasswordField = document.getElementById('ConfirmPassword');
+            const changePasswordCheckbox = document.getElementById('ChangePassword');
+            const passwordFields = document.getElementById('passwordFields');
 
+            // Show/hide password fields based on checkbox
+            changePasswordCheckbox.addEventListener('change', () => {
+                passwordFields.style.display = changePasswordCheckbox.checked ? 'block' : 'none';
+                if (!changePasswordCheckbox.checked) {
+                    newPasswordField.value = '';
+                    confirmPasswordField.value = '';
+                }
+            });
 
-        // Current Password visibility toggle
-        const eyeIconCurrent = document.getElementById('eyeIconCurrent');
-        const showCurrentPassword = document.getElementById('showCurrentPassword');
-        showCurrentPassword.addEventListener('click', () => {
-            if (currentPasswordField.type === 'password') {
-                currentPasswordField.type = 'text';
-                eyeIconCurrent.classList.remove('fa-eye');
-                eyeIconCurrent.classList.add('fa-eye-slash');
-            } else {
-                currentPasswordField.type = 'password';
-                eyeIconCurrent.classList.remove('fa-eye-slash');
-                eyeIconCurrent.classList.add('fa-eye');
-            }
-        });
+            // Current Password visibility toggle
+            const eyeIconCurrent = document.getElementById('eyeIconCurrent');
+            const showCurrentPassword = document.getElementById('showCurrentPassword');
+            showCurrentPassword.addEventListener('click', () => {
+                if (currentPasswordField.type === 'password') {
+                    currentPasswordField.type = 'text';
+                    eyeIconCurrent.classList.remove('fa-eye');
+                    eyeIconCurrent.classList.add('fa-eye-slash');
+                } else {
+                    currentPasswordField.type = 'password';
+                    eyeIconCurrent.classList.remove('fa-eye-slash');
+                    eyeIconCurrent.classList.add('fa-eye');
+                }
+            });
 
-            // Password visibility toggle
+            // New Password visibility toggle
             const eyeIcon = document.getElementById('eyeIcon');
             eyeIcon.addEventListener('click', () => {
                 if (newPasswordField.type === 'password') {
@@ -186,45 +202,25 @@
                 }
             });
 
-            // Handle "Change Password" checkbox logic
-            changePasswordCheckbox.addEventListener('change', () => {
-                if (!changePasswordCheckbox.checked) {
-                    passwordFields.style.display = 'none';
-                    newPasswordField.value = '';
-                    confirmPasswordField.value = '';
-                    newPasswordField.required = false;
-                    confirmPasswordField.required = false;
-                } else {
-                    passwordFields.style.display = 'block';
-                    newPasswordField.required = true;
-                    confirmPasswordField.required = true;
-                }
-            });
-
-            // Form submission validation
+            // Form validation
             const form = document.querySelector('form');
             form.addEventListener('submit', function(event) {
                 if (changePasswordCheckbox.checked) {
                     const newPassword = newPasswordField.value;
                     const confirmPassword = confirmPasswordField.value;
 
-                    if (!newPassword || !confirmPassword) {
-                        event.preventDefault();
-                        alert("Please fill in both password fields.");
-                        return;
-                    }
+                    if (newPassword || confirmPassword) {
+                        if (newPassword !== confirmPassword) {
+                            event.preventDefault();
+                            alert("Passwords do not match. Please ensure both passwords are the same.");
+                            return;
+                        }
 
-                    if (newPassword !== confirmPassword) {
-                        event.preventDefault();
-                        alert("Passwords do not match. Please ensure both passwords are the same.");
-                        return;
-                    }
-
-                    // Add minimum password length validation
-                    if (newPassword.length < 6) {
-                        event.preventDefault();
-                        alert("Password must be at least 6 characters long.");
-                        return;
+                        if (newPassword.length < 6) {
+                            event.preventDefault();
+                            alert("Password must be at least 6 characters long.");
+                            return;
+                        }
                     }
                 }
             });
@@ -237,6 +233,7 @@
     </script>
 }
 
+<style>
 <!-- Custom Styling -->
 <style>
     body {
