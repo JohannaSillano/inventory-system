@@ -28,50 +28,56 @@
                     <div class="form-group mb-4">
                         <label for="FirstName" class="fw-semibold" style="font-size: 1.1rem; color: #555;">First Name</label>
                         <input type="text" class="form-control form-control-lg" id="FirstName" name="FirstName" value="@Model.FirstName" required>
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
                     </div>
 
                     <!-- Last Name -->
                     <div class="form-group mb-4">
                         <label for="LastName" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Last Name</label>
                         <input type="text" class="form-control form-control-lg" id="LastName" name="LastName" value="@Model.LastName" required>
+                        <span asp-validation-for="LastName" class="text-danger"></span>
                     </div>
 
                     <!-- Email -->
                     <div class="form-group mb-4">
                         <label for="Email" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Email</label>
                         <input type="email" class="form-control form-control-lg" id="Email" name="Email" value="@Model.Email" required>
+                        <span asp-validation-for="Email" class="text-danger"></span>
                     </div>
 
                     <!-- Phone Number -->
                     <div class="form-group mb-4">
                         <label for="PhoneNumber" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Phone Number</label>
                         <input type="text" class="form-control form-control-lg" id="PhoneNumber" name="PhoneNumber" value="@Model.PhoneNumber">
+                        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
                     </div>
 
                     <!-- Address -->
                     <div class="form-group mb-4">
                         <label for="Address" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Address</label>
                         <input type="text" class="form-control form-control-lg" id="Address" name="Address" value="@Model.Address">
+                        <span asp-validation-for="Address" class="text-danger"></span>
                     </div>
 
                     <!-- Role -->
                     <div class="form-group mb-4">
                         <label for="Role" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Role</label>
                         <input type="text" class="form-control form-control-lg" id="Role" name="Role" value="@Model.Role" required>
+                        <span asp-validation-for="Role" class="text-danger"></span>
                     </div>
-
-                    <!-- Password (Read-Only) -->
+                    
+                    <!-- Original Password Display -->
                     <div class="form-group mb-4">
-                        <label for="Password" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Current Password</label>
+                        <label for="CurrentPassword" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Current Password</label>
                         <div class="input-group">
-                            <input type="password" class="form-control form-control-lg" id="Password" name="Password" value="@Model.Password" readonly>
-                            <span class="input-group-text" id="showPassword" style="cursor: pointer;">
-                                <i class="fa fa-eye" id="eyeIcon"></i>
+                            <input type="password" class="form-control form-control-lg" id="CurrentPassword" name="CurrentPassword" value="@Model.Password" readonly>
+                            <span class="input-group-text" id="showCurrentPassword" style="cursor: pointer;">
+                                <i class="fa fa-eye" id="eyeIconCurrent"></i>
                             </span>
                         </div>
                     </div>
 
-                    <!-- Change Password Checkbox -->
+                    <!-- Change Password Section -->
                     <div class="form-group mb-4">
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" id="ChangePassword" name="ChangePassword" />
@@ -79,26 +85,27 @@
                         </div>
                     </div>
 
-                    <!-- New Password Fields (Initially Hidden) -->
+                    <!-- Password Fields (Visible only when Change Password is checked) -->
                     <div id="passwordFields" style="display: none;">
                         <!-- New Password -->
                         <div class="form-group mb-4">
                             <label for="NewPassword" class="fw-semibold" style="font-size: 1.1rem; color: #555;">New Password</label>
                             <div class="input-group">
-                                <input type="password" class="form-control form-control-lg" id="Password" name="Password">
-                                <span class="input-group-text" id="showNewPassword" style="cursor: pointer;">
-                                    <i class="fa fa-eye" id="eyeIconNew"></i>
+                                <input type="password" class="form-control form-control-lg" id="NewPassword" name="Password">
+                                <span class="input-group-text" id="showPassword" style="cursor: pointer;">
+                                    <i class="fa fa-eye" id="eyeIcon"></i>
                                 </span>
                             </div>
+                            <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
 
                         <!-- Confirm New Password -->
                         <div class="form-group mb-4">
-                            <label for="ConfirmNewPassword" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Confirm New Password</label>
+                            <label for="ConfirmPassword" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Confirm New Password</label>
                             <div class="input-group">
-                                <input type="password" class="form-control form-control-lg" id="ConfirmNewPassword" name="ConfirmNewPassword">
-                                <span class="input-group-text" id="showConfirmNewPassword" style="cursor: pointer;">
-                                    <i class="fa fa-eye" id="eyeIconConfirmNew"></i>
+                                <input type="password" class="form-control form-control-lg" id="ConfirmPassword" name="ConfirmPassword">
+                                <span class="input-group-text" id="showConfirmPassword" style="cursor: pointer;">
+                                    <i class="fa fa-eye" id="eyeIconConfirm"></i>
                                 </span>
                             </div>
                         </div>
@@ -123,99 +130,112 @@
     </div>
 </div>
 
-<!-- Fade-In Animation Script -->
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        // Fade-in animation
-        const fadeInElements = document.querySelectorAll('.fade-in');
-        fadeInElements.forEach(el => {
-            el.style.opacity = 0;
-            el.style.transform = 'translateY(10px)';
-            setTimeout(() => {
-                el.style.transition = 'opacity 0.8s ease-in-out, transform 0.8s ease-in-out';
-                el.style.opacity = 1;
-                el.style.transform = 'translateY(0)';
-            }, 100);
-        });
-
-        // Current Password visibility toggle
-        const eyeIcon = document.getElementById('eyeIcon');
-        const passwordField = document.getElementById('Password');
-        eyeIcon.addEventListener('click', () => {
-            if (passwordField.type === 'password') {
-                passwordField.type = 'text';
-                eyeIcon.classList.remove('fa-eye');
-                eyeIcon.classList.add('fa-eye-slash');
-            } else {
-                passwordField.type = 'password';
-                eyeIcon.classList.remove('fa-eye-slash');
-                eyeIcon.classList.add('fa-eye');
-            }
-        });
-
-        // New Password visibility toggle
-        const eyeIconNew = document.getElementById('eyeIconNew');
+<!-- Scripts -->
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const currentPasswordField = document.getElementById('CurrentPassword');
         const newPasswordField = document.getElementById('NewPassword');
-        eyeIconNew.addEventListener('click', () => {
-            if (newPasswordField.type === 'password') {
-                newPasswordField.type = 'text';
-                eyeIconNew.classList.remove('fa-eye');
-                eyeIconNew.classList.add('fa-eye-slash');
-            } else {
-                newPasswordField.type = 'password';
-                eyeIconNew.classList.remove('fa-eye-slash');
-                eyeIconNew.classList.add('fa-eye');
-            }
-        });
-
-        // Confirm New Password visibility toggle
-        const eyeIconConfirmNew = document.getElementById('eyeIconConfirmNew');
-        const confirmNewPasswordField = document.getElementById('ConfirmNewPassword');
-        eyeIconConfirmNew.addEventListener('click', () => {
-            if (confirmNewPasswordField.type === 'password') {
-                confirmNewPasswordField.type = 'text';
-                eyeIconConfirmNew.classList.remove('fa-eye');
-                eyeIconConfirmNew.classList.add('fa-eye-slash');
-            } else {
-                confirmNewPasswordField.type = 'password';
-                eyeIconConfirmNew.classList.remove('fa-eye-slash');
-                eyeIconConfirmNew.classList.add('fa-eye');
-            }
-        });
-
-        // Handle "Change Password" checkbox logic
+        const confirmPasswordField = document.getElementById('ConfirmPassword');
         const changePasswordCheckbox = document.getElementById('ChangePassword');
         const passwordFields = document.getElementById('passwordFields');
-        changePasswordCheckbox.addEventListener('change', () => {
-            if (!changePasswordCheckbox.checked) {
-                passwordFields.style.display = 'none';
-                document.getElementById('NewPassword').required = false;
-                document.getElementById('ConfirmNewPassword').required = false;
-                // Clear password fields when hiding
-                document.getElementById('NewPassword').value = '';
-                document.getElementById('ConfirmNewPassword').value = '';
+
+
+        // Current Password visibility toggle
+        const eyeIconCurrent = document.getElementById('eyeIconCurrent');
+        const showCurrentPassword = document.getElementById('showCurrentPassword');
+        showCurrentPassword.addEventListener('click', () => {
+            if (currentPasswordField.type === 'password') {
+                currentPasswordField.type = 'text';
+                eyeIconCurrent.classList.remove('fa-eye');
+                eyeIconCurrent.classList.add('fa-eye-slash');
             } else {
-                passwordFields.style.display = 'block';
-                document.getElementById('NewPassword').required = true;
-                document.getElementById('ConfirmNewPassword').required = true;
+                currentPasswordField.type = 'password';
+                eyeIconCurrent.classList.remove('fa-eye-slash');
+                eyeIconCurrent.classList.add('fa-eye');
             }
         });
 
-        // Form submission validation for matching passwords
-        const form = document.querySelector('form');
-        form.addEventListener('submit', function(event) {
-            if (changePasswordCheckbox.checked) {
-                const newPassword = document.getElementById('NewPassword').value;
-                const confirmPassword = document.getElementById('ConfirmNewPassword').value;
-
-                if (newPassword !== confirmPassword) {
-                    event.preventDefault(); // Prevent form submission
-                    alert("Passwords do not match. Please ensure both passwords are the same.");
+            // Password visibility toggle
+            const eyeIcon = document.getElementById('eyeIcon');
+            eyeIcon.addEventListener('click', () => {
+                if (newPasswordField.type === 'password') {
+                    newPasswordField.type = 'text';
+                    eyeIcon.classList.remove('fa-eye');
+                    eyeIcon.classList.add('fa-eye-slash');
+                } else {
+                    newPasswordField.type = 'password';
+                    eyeIcon.classList.remove('fa-eye-slash');
+                    eyeIcon.classList.add('fa-eye');
                 }
-            }
+            });
+
+            // Confirm Password visibility toggle
+            const eyeIconConfirm = document.getElementById('eyeIconConfirm');
+            eyeIconConfirm.addEventListener('click', () => {
+                if (confirmPasswordField.type === 'password') {
+                    confirmPasswordField.type = 'text';
+                    eyeIconConfirm.classList.remove('fa-eye');
+                    eyeIconConfirm.classList.add('fa-eye-slash');
+                } else {
+                    confirmPasswordField.type = 'password';
+                    eyeIconConfirm.classList.remove('fa-eye-slash');
+                    eyeIconConfirm.classList.add('fa-eye');
+                }
+            });
+
+            // Handle "Change Password" checkbox logic
+            changePasswordCheckbox.addEventListener('change', () => {
+                if (!changePasswordCheckbox.checked) {
+                    passwordFields.style.display = 'none';
+                    newPasswordField.value = '';
+                    confirmPasswordField.value = '';
+                    newPasswordField.required = false;
+                    confirmPasswordField.required = false;
+                } else {
+                    passwordFields.style.display = 'block';
+                    newPasswordField.required = true;
+                    confirmPasswordField.required = true;
+                }
+            });
+
+            // Form submission validation
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function(event) {
+                if (changePasswordCheckbox.checked) {
+                    const newPassword = newPasswordField.value;
+                    const confirmPassword = confirmPasswordField.value;
+
+                    if (!newPassword || !confirmPassword) {
+                        event.preventDefault();
+                        alert("Please fill in both password fields.");
+                        return;
+                    }
+
+                    if (newPassword !== confirmPassword) {
+                        event.preventDefault();
+                        alert("Passwords do not match. Please ensure both passwords are the same.");
+                        return;
+                    }
+
+                    // Add minimum password length validation
+                    if (newPassword.length < 6) {
+                        event.preventDefault();
+                        alert("Password must be at least 6 characters long.");
+                        return;
+                    }
+                }
+            });
         });
-    });
-</script>
+
+        // Add fade-in animation
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('.fade-in').classList.add('active');
+        });
+    </script>
+}
 
 <!-- Custom Styling -->
 <style>
@@ -224,9 +244,23 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
+    .fade-in {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .fade-in.active {
+        opacity: 1;
+    }
+
     .card {
         border: none;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-control {
+        border: 1px solid #ced4da;
+        transition: all 0.2s ease-in-out;
     }
 
     .form-control:focus {
@@ -234,20 +268,32 @@
         border-color: #80bdff;
     }
 
+    .btn {
+        transition: all 0.2s ease-in-out;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        border: none;
+    }
+
     .btn-success:hover {
         background-color: #218838;
         transform: translateY(-2px);
-        transition: all 0.2s ease;
+    }
+
+    .btn-secondary:hover {
+        transform: translateY(-2px);
     }
 
     .input-group-text {
         background: none;
         border: none;
-        cursor: pointer;
+        color: #6c757d;
     }
 
-    .fade-in {
-        opacity: 0;
-        transform: translateY(10px);
+    .text-danger {
+        font-size: 0.875rem;
+        margin-top: 0.25rem;
     }
 </style>
