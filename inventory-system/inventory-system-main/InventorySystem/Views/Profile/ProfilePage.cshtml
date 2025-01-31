@@ -19,6 +19,90 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/dashboard.css" asp-append-version="true" />
 
+</head>
+<body>
+    <!-- Page Header -->
+    <div class="d-flex align-items-center mb-4" style="width: 1000px; margin: 30px 0 0 26px; align-items:center;">
+        <a asp-action="Index" asp-controller="Dashboard" class="text-decoration-none me-3 text-dark" title="Go Back">
+            <i class="fa-solid fa-arrow-left fs-3"></i>
+        </a>
+        <h1 class="mb-0 fw-bold" style="color: #343a40; font-size: 28px; margin:0;">Employees</h1>
+    </div>
+
+    <!-- Success Message -->
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <!-- Add Employee Button -->
+    <div class="d-flex flex-row justify-content-end mb-3" style="width: 1076px; margin-left: 75px;">
+        <a asp-action="AddEmployee" class="btn btn-success"><i class="fa-solid fa-plus-circle"></i> Add Employee</a>
+    </div>
+
+    <!-- Employee Profiles -->
+    <div class="container">
+        @foreach (var employee in Model)
+        {
+            <div class="card">
+                <div class="card-body">
+                    <div class="profile-container">
+                        <div class="profile-info">
+                            <p>Full Name:</p>
+                            <p>@employee.FirstName @employee.LastName</p>
+                        </div>
+                        <div class="profile-info">
+                            <p>Email:</p>
+                            <p>@employee.Email</p>
+                        </div>
+                        <div class="profile-info">
+                            <p>Phone Number:</p>
+                            <p>@employee.PhoneNumber</p>
+                        </div>
+                        <div class="profile-info">
+                            <p>Address:</p>
+                            <p>@employee.Address</p>
+                        </div>
+                        <div class="profile-info">
+                            <p>Role:</p>
+                            <p>@employee.Role</p>
+                        </div>
+                    </div>
+                    <div class="actions-container">
+                        <a asp-action="EditEmployee" asp-route-id="@employee.Id" class="btn btn-primary">
+                            <i class="fa-solid fa-user-edit"></i> Edit Profile
+                        </a>
+                        <!-- Delete Button -->
+                        <form asp-action="DeleteEmployee" asp-route-id="@employee.Id" method="post" onsubmit="return confirm('Are you sure you want to delete this employee?');">
+                            <button type="submit" class="btn btn-danger">
+                                <i class="fa-solid fa-trash"></i> Delete
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                button.style.transform = 'scale(1.05)';
+                button.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.3)';
+            });
+            button.addEventListener('mouseleave', () => {
+                button.style.transform = 'scale(1)';
+                button.style.boxShadow = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
+
     <style>
         /* Styles from your existing code */
         body {
@@ -119,87 +203,9 @@
         .btn-danger:hover {
             background-color: #c0392b;
         }
-    </style>
-</head>
-<body>
-    <!-- Page Header -->
-    <div class="d-flex align-items-center mb-4" style="width: 1000px; margin: 30px 0 0 26px; align-items:center;">
-        <a asp-action="Index" asp-controller="Dashboard" class="text-decoration-none me-3 text-dark" title="Go Back">
-            <i class="fa-solid fa-arrow-left fs-3"></i>
-        </a>
-        <h1 class="mb-0 fw-bold" style="color: #343a40; font-size: 28px; margin:0;">Employees</h1>
-    </div>
 
-    <!-- Success Message -->
-    @if (TempData["SuccessMessage"] != null)
-    {
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-            @TempData["SuccessMessage"]
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-    }
-
-    <!-- Add Employee Button -->
-    <div class="d-flex flex-row justify-content-end mb-3" style="width: 1076px; margin-left: 75px;">
-        <a asp-action="AddEmployee" class="btn btn-success"><i class="fa-solid fa-plus-circle"></i> Add Employee</a>
-    </div>
-
-    <!-- Employee Profiles -->
-    <div class="container">
-        @foreach (var employee in Model)
-        {
-            <div class="card">
-                <div class="card-body">
-                    <div class="profile-container">
-                        <div class="profile-info">
-                            <p>Full Name:</p>
-                            <p>@employee.FirstName @employee.LastName</p>
-                        </div>
-                        <div class="profile-info">
-                            <p>Email:</p>
-                            <p>@employee.Email</p>
-                        </div>
-                        <div class="profile-info">
-                            <p>Phone Number:</p>
-                            <p>@employee.PhoneNumber</p>
-                        </div>
-                        <div class="profile-info">
-                            <p>Address:</p>
-                            <p>@employee.Address</p>
-                        </div>
-                        <div class="profile-info">
-                            <p>Role:</p>
-                            <p>@employee.Role</p>
-                        </div>
-                    </div>
-                    <div class="actions-container">
-                        <a asp-action="EditEmployee" asp-route-id="@employee.Id" class="btn btn-primary">
-                            <i class="fa-solid fa-user-edit"></i> Edit Profile
-                        </a>
-                        <!-- Delete Button -->
-                        <form asp-action="DeleteEmployee" asp-route-id="@employee.Id" method="post" onsubmit="return confirm('Are you sure you want to delete this employee?');">
-                            <button type="submit" class="btn btn-danger">
-                                <i class="fa-solid fa-trash"></i> Delete
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+        .btn i {
+            margin-right: 8px;  /* Adds space between icon and text */
         }
-    </div>
-
-    <!-- Scripts -->
-    <script>
-        document.querySelectorAll('.btn').forEach(button => {
-            button.addEventListener('mouseenter', () => {
-                button.style.transform = 'scale(1.05)';
-                button.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.3)';
-            });
-            button.addEventListener('mouseleave', () => {
-                button.style.transform = 'scale(1)';
-                button.style.boxShadow = 'none';
-            });
-        });
-    </script>
-</body>
-</html>
+        
+    </style>
