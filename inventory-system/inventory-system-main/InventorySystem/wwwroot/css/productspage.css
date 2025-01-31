@@ -25,8 +25,6 @@
     100% { opacity: 1; transform: translateY(0); }
 }
 
-
-
 /* Custom styling for icons to make them bigger */
 .cust-icon {
     font-size: 24px;  /* Increase the icon size */
@@ -41,7 +39,7 @@
     height: 40px; /* Adjust height if needed */
     padding: 0; /* Remove padding */
     margin-right: 5px; /* Space between buttons */
-    transition: transform 0.3s, background-color 0.3s;
+    transition: transform 0.5s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .btn-sm i {
@@ -50,18 +48,18 @@
 
 .btn-sm:hover {
     transform: scale(1.1);
-    background-color: #2b2d42; /* Change background on hover */
 }
 
 /* Hover effect for edit and delete icons */
 .action-container a:hover,
 .action-container button:hover {
     transform: scale(1.2);
-    color: #2b2d42; /* Change icon color on hover */
+    color: white; /* Change icon color on hover */
 }
 
 /* Hover effect for the "Add Product" button */
 .btn-success:hover {
+    transition: transform 0.5s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     transform: scale(1.1);
     background-color: #28a745; /* Change background color */
 }
@@ -132,6 +130,15 @@ td:nth-child(3), td:nth-child(4), td:nth-child(5), td:nth-child(6), td:nth-child
     cursor: pointer;
     background-color: #007bff;
     color: white;
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.5s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.pagination-btn:hover {
+    transform: scale(1.05);
+    background-color: #0056b3; /* Change background color on hover */
+    color: white;
+    text-decoration: none; /* Ensure no underline on hover */
 }
 
 .action-butt {
@@ -139,6 +146,7 @@ td:nth-child(3), td:nth-child(4), td:nth-child(5), td:nth-child(6), td:nth-child
     margin: 0;
     width: 40px;
     margin-right: 2px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .stock-status p {

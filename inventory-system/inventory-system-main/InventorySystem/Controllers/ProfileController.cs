@@ -14,13 +14,35 @@ public class ProfileController : Controller
         _logger = logger;
     }
 
-    // Display the profile page for all employees, excluding deleted employees
-    public IActionResult ProfilePage()
+    // Display the profile page for all employees, excluding deleted employees, with pagination
+    public IActionResult ProfilePage(int page = 1)
+{
+    int pageSize = 2;  // Number of employees per page
+
+    // Get the total count of employees (excluding deleted ones)
+    var totalEmployees = _context.Employees.Count(e => !e.IsDeleted);
+
+    // Calculate the total number of pages
+    var totalPages = (int)Math.Ceiling(totalEmployees / (double)pageSize);
+
+    // Get employees for the current page, sorted alphabetically by LastName
+    var employees = _context.Employees
+        .Where(e => !e.IsDeleted)  // Only non-deleted employees
+        .OrderBy(e => e.FirstName)  // Sort alphabetically by LastName
+        .Skip((page - 1) * pageSize)  // Skip employees for previous pages
+        .Take(pageSize)  // Take the number of employees for the current page
+        .ToList();
+
+    // Prepare the model with paginated data
+    var model = new PaginatedEmployeeModel
     {
-        // Fetch only non-deleted employees
-        var profiles = _context.Employees.Where(e => !e.IsDeleted).ToList();
-        return View(profiles); // Pass the list of profiles to the view
-    }
+        Employees = employees,
+        CurrentPage = page,
+        TotalPages = totalPages
+    };
+
+    return View(model);  // Pass the model to the view
+}
 
     // Display the form to add a new employee
     public IActionResult AddEmployee()

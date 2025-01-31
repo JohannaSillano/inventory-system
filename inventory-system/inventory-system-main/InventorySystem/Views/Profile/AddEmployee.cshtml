@@ -23,20 +23,20 @@
                 <form id="AddEmployeeForm" asp-action="AddEmployee" method="post" onsubmit="return validatePasswordMatch()">
                     <!-- First Name -->
                     <div class="form-group mb-4">
-                        <label for="FirstName" class="fw-semibold" style="font-size: 1.1rem; color: #555;">First Name</label>
-                        <input type="text" class="form-control form-control-lg" id="FirstName" name="FirstName" required>
+                        <label for="FirstName" class="fw-semibold" style="font-size: 1.1rem; color: #555;">First Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control form-control-lg" id="FirstName" name="FirstName" required aria-describedby="FirstNameHelp">
                     </div>
 
                     <!-- Last Name -->
                     <div class="form-group mb-4">
-                        <label for="LastName" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Last Name</label>
-                        <input type="text" class="form-control form-control-lg" id="LastName" name="LastName" required>
+                        <label for="LastName" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Last Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control form-control-lg" id="LastName" name="LastName" required aria-describedby="LastNameHelp">
                     </div>
 
                     <!-- Email -->
                     <div class="form-group mb-4">
-                        <label for="Email" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Email</label>
-                        <input type="email" class="form-control form-control-lg" id="Email" name="Email" required>
+                        <label for="Email" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Email <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control form-control-lg" id="Email" name="Email" required aria-describedby="EmailHelp">
                     </div>
 
                     <!-- Phone Number -->
@@ -51,21 +51,21 @@
                         <input type="text" class="form-control form-control-lg" id="Address" name="Address">
                     </div>
 
-                    <!-- Role (New Field) -->
+                    <!-- Role -->
                     <div class="form-group mb-4">
-                        <label for="Role" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Role</label>
+                        <label for="Role" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Role <span class="text-danger">*</span></label>
                         <input type="text" class="form-control form-control-lg" id="Role" name="Role" required>
                     </div>
 
                     <!-- Password -->
                     <div class="form-group mb-4">
-                        <label for="Password" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Password</label>
+                        <label for="Password" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Password <span class="text-danger">*</span></label>
                         <input type="password" class="form-control form-control-lg" id="Password" name="Password" required>
                     </div>
 
                     <!-- Confirm Password -->
                     <div class="form-group mb-4">
-                        <label for="ConfirmPassword" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Confirm Password</label>
+                        <label for="ConfirmPassword" class="fw-semibold" style="font-size: 1.1rem; color: #555;">Confirm Password <span class="text-danger">*</span></label>
                         <input type="password" class="form-control form-control-lg" id="ConfirmPassword" name="ConfirmPassword" required>
                     </div>
 
@@ -118,7 +118,7 @@
         if (password.length < 6) {
             alert("Password must be at least 6 characters long.");
             return false; // Prevent form submission
-    }
+        }
 
         if (password !== confirmPassword) {
             alert("Passwords do not match.");
@@ -175,5 +175,9 @@
 
     .fw-semibold {
         font-weight: 600;
+    }
+
+    .text-danger {
+        color: #dc3545;
     }
 </style>
