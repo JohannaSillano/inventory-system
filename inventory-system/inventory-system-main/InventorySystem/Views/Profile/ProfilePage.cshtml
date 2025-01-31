@@ -1,4 +1,4 @@
-@model IEnumerable<InventorySystem.Models.Employee>
+@model InventorySystem.Models.PaginatedEmployeeModel
 
 @{
     ViewData["Title"] = "Employees";
@@ -11,14 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"]</title>
 
-    <!-- Include Font Awesome for icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/dashboard.css" asp-append-version="true" />
-
 </head>
 <body>
     <!-- Page Header -->
@@ -45,7 +39,7 @@
 
     <!-- Employee Profiles -->
     <div class="container">
-        @foreach (var employee in Model)
+        @foreach (var employee in Model.Employees)
         {
             <div class="card">
                 <div class="card-body">
@@ -87,6 +81,21 @@
         }
     </div>
 
+    <!-- Pagination Controls -->
+    <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 50px;">
+        @if (Model.CurrentPage > 1)
+        {
+            <a asp-action="ProfilePage" asp-route-page="@(Model.CurrentPage - 1)" class="pagination-btn">&lt; Previous</a>
+        }
+
+        <span>Page @Model.CurrentPage of @Model.TotalPages</span>
+
+        @if (Model.CurrentPage < Model.TotalPages)
+        {
+            <a asp-action="ProfilePage" asp-route-page="@(Model.CurrentPage + 1)" class="pagination-btn">Next &gt;</a>
+        }
+    </div>
+
     <!-- Scripts -->
     <script>
         document.querySelectorAll('.btn').forEach(button => {
@@ -103,108 +112,136 @@
 </body>
 </html>
 
-    <style>
-        /* Styles from your existing code */
-        body {
-            font-family: "Poppins", serif;
-            color: #000000;
-        }
+ <style>
+    /* Styles from your existing code */
+    body {
+        font-family: "Poppins", serif;
+        color: #000000;
+    }
 
-        .profile-info p {
-            font-size: 16px;
-            color: #000000;
-        }
+    .profile-info p {
+        font-size: 16px;
+        color: #000000;
+    }
 
-        h1 {
-            font-size: 1.8rem;
-            margin: 0;
-            color: #000000;
-        }
+    h1 {
+        font-size: 1.8rem;
+        margin: 0;
+        color: #000000;
+    }
 
-        .d-flex.align-items-center a {
-            margin-right: 10px;
-            color: inherit;
-        }
+    .d-flex.align-items-center a {
+        margin-right: 10px;
+        color: inherit;
+    }
 
-        .card {
-            background-color: #F5F5F5;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            width: 100%;
-            margin-top: 12px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin-bottom: 20px;
-        }
+    .card {
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    }
+    
+    .card:hover {
+    transform: scale(1.9);
+    background-color: #E5E4E2;
+    }
 
-        .card-body {
-            padding: 20px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 100%;
-        }
+    .card-body {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
 
-        .profile-container {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            flex: 1;
-        }
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex: 1;
+    }
 
-        .profile-info {
-            display: flex;
-            flex-direction: row;
-            gap: 8px;
-            align-items: center;
-        }
+    .profile-info {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+    }
 
-        .actions-container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 10px;
-            margin-left: 20px;
-        }
+    .actions-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-left: 20px;
+    }
 
-        .btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            color: #ffffff;
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-size: 14px;
-            font-weight: 500;
-            width: 200px;
-            height: 45px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-        }
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-size: 14px;
+        font-weight: 500;
+        width: 200px;
+        height: 45px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        transition: transform 0.5s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    }
 
-        .btn-primary {
-            background-color: #2b60b4;
-            border: none;
-        }
+    .btn-primary {
+        background-color: #2b60b4;
+        border: none;
+    }
 
-        .btn-danger {
-            background-color: #e74c3c;
-            border: none;
-        }
+    .btn-danger {
+        background-color: #e74c3c;
+        border: none;
+    }
 
-        .btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            background-color: #0056b3;
-        }
+    .btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        background-color: #0056b3;
+    }
 
-        .btn-danger:hover {
-            background-color: #c0392b;
-        }
+    .btn-danger:hover {
+        background-color: #c0392b;
+    }
 
-        .btn i {
-            margin-right: 8px;  /* Adds space between icon and text */
-        }
-    </style>
+    .btn i {
+        margin-right: 8px;  /* Adds space between icon and text */
+    }
+
+    .pagination-btn {
+    padding: 8px 16px;
+    margin: 0 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white !important; /* Ensure text is white */
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.5s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    }
+    
+    .pagination-btn:hover {
+    transform: scale(1.05);
+    background-color: #0056b3; /* Change background color on hover */
+    color: white !important; /* Ensure text stays white on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+    }
+
+</style>
